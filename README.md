@@ -5,7 +5,7 @@
 
 * We have used light-weight datasets, friendly to students who only have CPU
 
-* I will keep update this project to match the latest version of TF
+* I will try to keep updating this project to match the latest version of TF
 
 CPU
 ```
