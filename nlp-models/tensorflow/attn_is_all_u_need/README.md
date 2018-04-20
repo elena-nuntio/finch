@@ -5,7 +5,7 @@ Implementing the idea of ["Attention is All you Need"](https://arxiv.org/abs/170
 
 <img src="https://github.com/zhedongzheng/finch/blob/master/assets/transformer.png" width="300">
 
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/multihead_attn.png">
+<img src="https://github.com/zhedongzheng/finch/blob/master/assets/multihead_attn.png" width='700'>
 
 Some functions are adapted from [Kyubyong's](https://github.com/Kyubyong/transformer) work, thanks for him!
 
