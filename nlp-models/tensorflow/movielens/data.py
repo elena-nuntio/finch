@@ -49,7 +49,11 @@ class DataLoader:
         self.data[routine]['X']['category_ids'] = []
         for category_id in tqdm(
             csv['category_ids'].values, total=len(csv), ncols=70):
-            self.data[routine]['X']['category_ids'].append([int(i) for i in category_id.split()])
+            temp_li = [0] * 18
+            category_id_li = category_id.split()
+            for idx in category_id_li:
+                temp_li[int(idx)] = 1
+            self.data[routine]['X']['category_ids'].append(temp_li)
         self.data[routine]['X']['category_ids'] = np.array(self.data[routine]['X']['category_ids'])
 
         self.data[routine]['X']['movie_title'] = []

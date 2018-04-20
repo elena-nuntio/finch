@@ -3,7 +3,8 @@ import paddle.v2 as paddle
 
 
 class Model:
-    def __init__(self):
+    def __init__(self, lr=1e-4):
+        self.lr = lr
         self.build_graph()
 
 
@@ -92,7 +93,7 @@ class Model:
         self.ops['predict'] = 5 * cos_sim
         self.ops['loss'] = tf.reduce_mean(tf.squared_difference(
             self.ops['predict'], self.placeholders['score']))
-        self.ops['train'] = tf.train.AdamOptimizer(1e-4).minimize(self.ops['loss'])
+        self.ops['train'] = tf.train.AdamOptimizer(self.lr).minimize(self.ops['loss'])
 
 
     def global_max_pooling(self, x):

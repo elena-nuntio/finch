@@ -5,7 +5,8 @@ from data import DataLoader
 import tensorflow as tf
 
 
-NUM_EPOCHS = 30
+NUM_EPOCHS = 50
+
 
 def main():
     dl = DataLoader()
@@ -26,8 +27,8 @@ def main():
                 score)
             
             if i % 500 == 0:
-                print("Epoch [%d/%d] | Batch [%d/%d] | Loss: %.2f" % (
-                    epoch, NUM_EPOCHS, i, n_batch, loss))
+                print("Epoch [%d/%d] | Batch [%d/%d] | Loss: %.2f | LR: %.4f" % (
+                    epoch, NUM_EPOCHS, i, n_batch, loss, model.lr))
         
         losses = []
         for i, (user_id, gender_id, age_id, job_id,

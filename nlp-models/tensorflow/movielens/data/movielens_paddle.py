@@ -32,14 +32,10 @@ def fn(creator):
         train_df['job_id'].append(train_sample[3])
         train_df['movie_id'].append(train_sample[4])
 
-        category_ids = [0]*18
-        for c_id in train_sample[5]:
-            category_ids[c_id] = 1
-        category_ids = [str(id) for id in category_ids]
+        category_ids = [str(idx) for idx in train_sample[5]]
         train_df['category_ids'].append(' '.join(category_ids))
 
-        movie_title_idx = [idx + 1 for idx in train_sample[6]]
-        movie_title_idx = [str(id) for id in movie_title_idx]
+        movie_title_idx = [str(idx+1) for idx in train_sample[6]]
         train_df['movie_title'].append(' '.join(movie_title_idx))
 
         train_df['score'].append(train_sample[7][0])
