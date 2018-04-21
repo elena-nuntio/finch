@@ -1,8 +1,8 @@
-Please additionally install these packages
+Please additionally install:
 ```
-pip3 install scipy bs4 python_speech_features
+pip3 install bs4 python_speech_features
 ```
-Download data
+Download data:
 ```
 python data_downloader.py
 ```
@@ -15,7 +15,7 @@ You should see outputs like this:
 32 /bitstream/1807/24488/32/OAF_tell_neutral.wav
 33 /bitstream/1807/24488/33/OAF_team_neutral.wav
 ```
-Train model
+Train model:
 ```
 python train.py
 ```
