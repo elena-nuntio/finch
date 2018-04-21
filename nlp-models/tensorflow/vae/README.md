@@ -1,4 +1,4 @@
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/vrae_struct.jpg" height='300'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/vrae_struct.jpg" height='300'>
 
 ---
 Implementing the idea of ["Generating Sentences from a Continuous Space"](https://arxiv.org/abs/1511.06349)
