@@ -1,6 +1,6 @@
 Please additionally install:
 ```
-pip3 install bs4 python_speech_features
+pip3 install beautifulsoup4 python_speech_features
 ```
 Download data:
 ```
