@@ -3,9 +3,9 @@ Implementing the idea of ["Attention is All you Need"](https://arxiv.org/abs/170
 
 ---
 
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/transformer.png" width="300">
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/transformer.png" width="300">
 
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/multihead_attn.png" width='700'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/multihead_attn.png" width='700'>
 
 Some functions are adapted from [Kyubyong's](https://github.com/Kyubyong/transformer) work, thanks for him!
 
@@ -56,4 +56,4 @@ Some functions are adapted from [Kyubyong's](https://github.com/Kyubyong/transfo
     我帅吗 -> 你是我的
     ```
 
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/transform20fps.gif" height='400'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/transform20fps.gif" height='400'>
