@@ -1,4 +1,4 @@
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/end2end_mn.png">
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/end2end_mn.png">
 
 ```
 python train.py
