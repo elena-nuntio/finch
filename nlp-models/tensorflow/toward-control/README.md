@@ -2,7 +2,7 @@
 Implementing the idea of ["Toward Controlled Generation of Text"](https://arxiv.org/abs/1703.00955)
 
 ---
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/control-vae.png" height='300'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/control-vae.png" height='300'>
 
 ```
 python train_base_vae.py
