@@ -1,4 +1,4 @@
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/tensorflow_nlp.png" height='100'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/tensorflow_nlp.png" height='100'>
 
 #### Installation 
 * Python 3 and Jupyter Notebook are required
@@ -35,14 +35,14 @@ $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
 * [Data Argumentation（数据增强）](https://github.com/zhedongzheng/finch/blob/master/README.md#data-argumentation%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA)
 ---
 #### Word Embedding（词向量）
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/decoration_6.png" height='100'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
 
 * Skip-Gram &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/word2vec_skipgram.py) &nbsp; &nbsp; [PTB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/word2vec_skipgram_test.ipynb)
 
 * CBOW &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/word2vec_cbow.py) &nbsp; &nbsp; [PTB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/word2vec_cbow_test.ipynb)
 
 #### Text Classification（文本分类）
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/decoration_2.png" height='100'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_2.png" height='100'>
 
 * Conv1D &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/concat_conv_1d_text_clf.py) &nbsp; &nbsp; [IMDB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/concat_conv_1d_text_clf_imdb_test.ipynb) &nbsp; &nbsp;
 
@@ -53,7 +53,7 @@ $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
 * TF-IDF + LR &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/logistic_regression.py) &nbsp; &nbsp; [IMDB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tfidf_imdb_test.ipynb)
 
 #### Text Generation（文本生成）
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/decoration_5.png" height='100'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_5.png" height='100'>
 
 * Char-RNN + Multinomial Sampling &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/rnn_text_gen.py) &nbsp; &nbsp; [English Story Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/rnn_text_gen_test.ipynb) &nbsp; &nbsp; [Chinese Address Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/rnn_text_gen_addr.ipynb)
 
@@ -66,26 +66,26 @@ $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
 * [VAE](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/vae) &nbsp; | &nbsp; [Controllable VAE](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/toward-control)
 
 #### Text Matching（文本匹配）
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/decoration_10.jpeg" height='200'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_10.jpeg" height='200'>
 
 * [Fake News Challenge](http://www.fakenewschallenge.org/)
 
     * [Coursework: LR + Gradient Descent (from Scratch)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/numpy/fnc_1.ipynb)
 
 #### Speech (语音)
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/decoration_7.png" height='100'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_7.png" height='100'>
 
 * [CTC](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/asr)
 
 #### Sequence Labelling（序列标记）
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/decoration_4.jpg" height='100'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_4.jpg" height='100'>
 
 * Bi-RNN + CRF &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/birnn_crf_clf.py) &nbsp; &nbsp; [POS Tagging](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/pos_birnn_crf_test.ipynb) &nbsp; &nbsp; [Chinese Segmentation](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/chseg_birnn_crf_test.ipynb)
 
 * Conv1D + CRF &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_seq_label.py) &nbsp; &nbsp; [POS Tagging](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_seq_label_pos_test.ipynb) &nbsp; &nbsp;  [Chinese Segmentation](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_seq_label_chseg_test.ipynb)
 
 #### Sequence to Sequence（序列到序列）
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/decoration_1.png" height='100'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_1.png" height='100'>
 
 * Seq2Seq &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq.py) &nbsp; &nbsp; [Sorting Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq_test.ipynb)
 
@@ -102,7 +102,7 @@ $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
 * [Attention Is All You Need](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
 
 #### Question Answering（问题回答）
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/dmn-details.png" height='100'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/dmn-details.png" height='100'>
 
 * [Facebook bAbI](https://research.fb.com/downloads/babi/)
 
@@ -111,7 +111,7 @@ $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
     * [Dynamic Memory Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/dmn) 
 
 #### Recommender System（推荐系统）
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/decoration_9.png" height='100'>
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_9.png" height='100'>
 
 * [Hybrid Neural Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/movielens)
 
