@@ -1,4 +1,4 @@
-<img src="https://github.com/zhedongzheng/finch/blob/master/assets/dmn-details.png">
+<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/dmn-details.png">
 
 ---
 
