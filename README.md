@@ -27,7 +27,6 @@ $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
 * [Text Classification（文本分类）](https://github.com/zhedongzheng/finch#text-classification%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB)
 * [Text Generation（文本生成）](https://github.com/zhedongzheng/finch#text-generation%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90)
 * [Text Matching（文本匹配）](https://github.com/zhedongzheng/finch/blob/master/README.md#text-matching%E6%96%87%E6%9C%AC%E5%8C%B9%E9%85%8D)
-* [Speech（语音）](https://github.com/zhedongzheng/finch#speech-%E8%AF%AD%E9%9F%B3)
 * [Sequence Labelling（序列标记）](https://github.com/zhedongzheng/finch#sequence-labelling%E5%BA%8F%E5%88%97%E6%A0%87%E8%AE%B0)
 * [Sequence to Sequence（序列到序列）](https://github.com/zhedongzheng/finch#sequence-to-sequence%E5%BA%8F%E5%88%97%E5%88%B0%E5%BA%8F%E5%88%97)
 * [Question Answering（问题回答）](https://github.com/zhedongzheng/finch/blob/master/README.md#question-answering%E9%97%AE%E9%A2%98%E5%9B%9E%E7%AD%94)
@@ -72,11 +71,6 @@ $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
 
     * [Coursework: LR + Gradient Descent (from Scratch)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/numpy/fnc_1.ipynb)
 
-#### Speech (语音)
-<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_7.png" height='100'>
-
-* [CTC](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/asr)
-
 #### Sequence Labelling（序列标记）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_4.jpg" height='100'>
 
@@ -98,6 +92,8 @@ $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
     * Seq2Seq + BiLSTM Encoder + Attention + Beam-Search &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq_ultimate.py) &nbsp; &nbsp; [Sorting Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq_ultimate_test.ipynb) 
 
     * Pointer Network &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/pointer_net.py) &nbsp; &nbsp; [Sorting Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/pointer_net_test.ipynb)
+
+* CTC &nbsp; | &nbsp; [Speech Recognition](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/asr)
 
 * [Attention Is All You Need](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
 
