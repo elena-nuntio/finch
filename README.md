@@ -22,14 +22,14 @@
 * Python 3 and [Jupyter Notebook](http://jupyter.org/) are required
 
 * CPU
-```
-$ pip3 install tensorflow==1.6.0 sklearn scipy tqdm
-```
+    ```
+    $ pip3 install tensorflow==1.6.0 sklearn scipy tqdm
+    ```
 
 * GPU
-```
-$ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
-```
+    ```
+    $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
+    ```
 ---
 #### Issues Have Been Asked
 * [Is the function "add_encoder_layer" in "seq2seq_ultimate.py" correct?](https://github.com/zhedongzheng/finch/issues/1)
