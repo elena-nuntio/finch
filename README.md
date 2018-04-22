@@ -6,7 +6,7 @@
 
 * I will keep updating this project to match the latest version of TF
 
-* ``` => TF Dataset API  ``` means reshaping the previous code by more powerful data pipelines
+* ``` => TF Dataset API  ``` means reshaping the previous code by more powerful input pipeline
 
 ---
 #### Installation 
