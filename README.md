@@ -1,11 +1,14 @@
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/tensorflow_nlp.png" height='100'>
 
+#### Introduction
+* We have used light-weight datasets, friendly to people who only have CPU
+
+* I will keep updating this project to match the latest version of TF
+
+* ``` => TF Dataset API  ``` means reshaping the previous code by more powerful data pipelines
+
 #### Installation 
 * Python 3 and Jupyter Notebook are required
-
-* We have used light-weight datasets, friendly to students who only have CPU
-
-* I will try to keep updating this project to match the latest version of TF
 
 CPU
 ```
