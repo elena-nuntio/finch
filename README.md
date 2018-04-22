@@ -6,7 +6,7 @@
 
 * I will keep updating this project to match the latest version of TF
 
-* ``` => TF Dataset API  ``` means reshaping the previous code by more powerful input pipeline
+* ``` => TF Dataset API  ``` means reshaping the previous code by using [more powerful input pipeline](https://www.tensorflow.org/api_guides/python/reading_data)
 
 ---
 #### Installation 
