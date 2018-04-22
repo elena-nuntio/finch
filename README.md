@@ -19,14 +19,14 @@
 * ``` => TF Data API  ``` means reshaping the previous code by using [more powerful input pipeline](https://www.tensorflow.org/api_guides/python/reading_data)
 ---
 #### Installation 
-Python 3 and [Jupyter Notebook](http://jupyter.org/) are required
+* Python 3 and [Jupyter Notebook](http://jupyter.org/) are required
 
-CPU
+* CPU
 ```
 $ pip3 install tensorflow==1.6.0 sklearn scipy tqdm
 ```
 
-GPU
+* GPU
 ```
 $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
 ```
