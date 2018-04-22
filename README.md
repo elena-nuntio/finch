@@ -1,13 +1,23 @@
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/tensorflow_nlp.png" height='100'>
 
 ---
+#### Contents
+* [Word Embedding（词向量）](https://github.com/zhedongzheng/finch#word-embedding%E8%AF%8D%E5%90%91%E9%87%8F)
+* [Text Classification（文本分类）](https://github.com/zhedongzheng/finch#text-classification%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB)
+* [Text Generation（文本生成）](https://github.com/zhedongzheng/finch#text-generation%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90)
+* [Text Matching（文本匹配）](https://github.com/zhedongzheng/finch/blob/master/README.md#text-matching%E6%96%87%E6%9C%AC%E5%8C%B9%E9%85%8D)
+* [Sequence Labelling（序列标记）](https://github.com/zhedongzheng/finch#sequence-labelling%E5%BA%8F%E5%88%97%E6%A0%87%E8%AE%B0)
+* [Sequence to Sequence（序列到序列）](https://github.com/zhedongzheng/finch#sequence-to-sequence%E5%BA%8F%E5%88%97%E5%88%B0%E5%BA%8F%E5%88%97)
+* [Question Answering（问题回答）](https://github.com/zhedongzheng/finch/blob/master/README.md#question-answering%E9%97%AE%E9%A2%98%E5%9B%9E%E7%AD%94)
+* [Recommender System（推荐系统）](https://github.com/zhedongzheng/finch/blob/master/README.md#recommender-system%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F)
+* [Data Argumentation（数据增强）](https://github.com/zhedongzheng/finch/blob/master/README.md#data-argumentation%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA)
+---
 #### Introduction
 * We have used light-weight datasets, friendly to people who only have CPU
 
 * I will keep updating this project to match the latest version of TF
 
 * ``` => TF Data API  ``` means reshaping the previous code by using [more powerful input pipeline](https://www.tensorflow.org/api_guides/python/reading_data)
-
 ---
 #### Installation 
 * Python 3 and Jupyter Notebook are required
@@ -21,22 +31,10 @@ GPU
 ```
 $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
 ```
-
 ---
 #### Issues Have Been Asked
 * [Is the function "add_encoder_layer" in "seq2seq_ultimate.py" correct?](https://github.com/zhedongzheng/finch/issues/1)
 * [in vae code, how to use LSTMcell?](https://github.com/zhedongzheng/finch/issues/2)
----
-#### Contents
-* [Word Embedding（词向量）](https://github.com/zhedongzheng/finch#word-embedding%E8%AF%8D%E5%90%91%E9%87%8F)
-* [Text Classification（文本分类）](https://github.com/zhedongzheng/finch#text-classification%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB)
-* [Text Generation（文本生成）](https://github.com/zhedongzheng/finch#text-generation%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90)
-* [Text Matching（文本匹配）](https://github.com/zhedongzheng/finch/blob/master/README.md#text-matching%E6%96%87%E6%9C%AC%E5%8C%B9%E9%85%8D)
-* [Sequence Labelling（序列标记）](https://github.com/zhedongzheng/finch#sequence-labelling%E5%BA%8F%E5%88%97%E6%A0%87%E8%AE%B0)
-* [Sequence to Sequence（序列到序列）](https://github.com/zhedongzheng/finch#sequence-to-sequence%E5%BA%8F%E5%88%97%E5%88%B0%E5%BA%8F%E5%88%97)
-* [Question Answering（问题回答）](https://github.com/zhedongzheng/finch/blob/master/README.md#question-answering%E9%97%AE%E9%A2%98%E5%9B%9E%E7%AD%94)
-* [Recommender System（推荐系统）](https://github.com/zhedongzheng/finch/blob/master/README.md#recommender-system%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F)
-* [Data Argumentation（数据增强）](https://github.com/zhedongzheng/finch/blob/master/README.md#data-argumentation%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA)
 ---
 #### Word Embedding（词向量）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
