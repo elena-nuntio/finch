@@ -16,7 +16,10 @@
 
 * I will keep updating this project to match the latest version of TF
 
-* ``` => TF Data API  ``` means reshaping the previous code by using [more powerful input pipeline](https://www.tensorflow.org/api_guides/python/reading_data)
+* ``` => TF Data API  ``` reshapes the previous code by [more powerful input pipeline](https://www.tensorflow.org/api_guides/python/reading_data)
+
+* ``` => TF Estimator API  ``` reshapes the previous code by [high level architecture](https://www.tensorflow.org/api_docs/python/tf/estimator)
+
 ---
 #### Installation 
 * Python 3 and [Jupyter Notebook](http://jupyter.org/) are required
