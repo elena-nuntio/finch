@@ -16,7 +16,7 @@
 
 * I will keep updating this project to match the latest version of TF
 
-* ``` => TF Data API  ``` reshapes the previous code by [more powerful input pipeline](https://www.tensorflow.org/api_guides/python/reading_data)
+* ``` => TF Data API  ``` reshapes the previous code by [efficient input pipeline](https://www.tensorflow.org/api_guides/python/reading_data)
 
 * ``` => TF Estimator API  ``` reshapes the previous code by [high level architecture](https://www.tensorflow.org/api_docs/python/tf/estimator)
 
