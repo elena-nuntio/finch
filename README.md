@@ -12,7 +12,7 @@
 * [Recommender System（推荐系统）](https://github.com/zhedongzheng/finch/blob/master/README.md#recommender-system%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F)
 * [Data Argumentation（数据增强）](https://github.com/zhedongzheng/finch/blob/master/README.md#data-argumentation%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA)
 ---
-* We have used light-weight datasets, friendly to people who only have CPU
+* I use light-weight datasets, friendly to people who only have CPU
 
 * I will keep updating this project to match the latest version of TF
 
