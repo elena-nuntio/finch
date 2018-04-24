@@ -114,23 +114,24 @@ def _model_fn_train(features, mode, params):
 def _model_fn_predict(features, mode, params):
     _ = forward_pass(features['source'], features['target'], params)
 
-    id_li = []
-    for j in range(args.target_max_len):
-        if len(id_li) == 0:
-            target = features['target']
-        elif len(id_li) == 1:
-            target = tf.concat((id_li[0], features['target'][:, 1:]), axis=1)
-        else:
-            target = tf.concat((tf.concat(id_li, axis=1),
-                                features['target'][:, len(id_li):]),
-                                axis=1)
-        
-        logits = forward_pass(features['source'], target, params, reuse=True)
-        ids = tf.argmax(logits, -1)[:, j]
-        ids = tf.expand_dims(ids, 1)
-        id_li.append(ids)
+    def cond(i, x, temp):
+        return i < args.target_max_len
+
+    def body(i, x, temp):
+        logits = forward_pass(features['source'], x, params, reuse=True)
+        ids = tf.argmax(logits, -1)[:, i]
+        ids = tf.expand_dims(ids, -1)
+
+        temp = tf.concat([temp[:, 1:], ids], -1)
+
+        x = tf.concat([temp[:, -(i+1):], temp[:, :-(i+1)]], -1)
+        x = tf.reshape(x, [tf.shape(temp)[0], 20])
+        i = i + 1
+        return i, x, temp
+
+    _, res, _ = tf.while_loop(cond, body, [tf.constant(0), features['target'], features['target']])
     
-    return tf.estimator.EstimatorSpec(mode=mode, predictions=tf.concat(id_li, axis=1))
+    return tf.estimator.EstimatorSpec(mode=mode, predictions=res)
 
 
 def tf_estimator_model_fn(features, labels, mode, params):
