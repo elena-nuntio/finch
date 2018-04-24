@@ -20,7 +20,7 @@ Some functions are adapted from [Kyubyong's](https://github.com/Kyubyong/transfo
 
     * added more activation choices (leaky relu / elu) for easier gradient propagation
 
-    * fixed masking mistake discovered [here](https://github.com/Kyubyong/transformer/issues/3)
+    * fixed a mistake of masking discovered [here](https://github.com/Kyubyong/transformer/issues/3)
 
     * used ```tf.while_loop``` to perform autoregressive decoding on graph, instead of ```feed_dict```
 
