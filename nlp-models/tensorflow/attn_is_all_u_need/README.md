@@ -10,7 +10,7 @@ Implementing the idea of ["Attention is All you Need"](https://arxiv.org/abs/170
 Some functions are adapted from [Kyubyong's](https://github.com/Kyubyong/transformer) work, thanks for him!
 
 * Based on that, we have:
-    * implemented the model under the architecture of ```tf.estimator.Estimator``` API
+    * implemented the model under the high level ```TF Estimator``` API
 
     * added an option to share the weights between encoder embedding and decoder embedding
 
