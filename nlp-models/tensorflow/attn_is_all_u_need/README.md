@@ -20,22 +20,25 @@ Some functions are adapted from [Kyubyong's](https://github.com/Kyubyong/transfo
 
     * added more activation choices (leaky relu / elu) for easier gradient propagation
 
-    * enhanced masking
+    * fixed masking mistake discovered [here](https://github.com/Kyubyong/transformer/issues/3)
 
-    * decoding on graph
+    * used ```tf.while_loop``` to perform autoregressive decoding on graph, instead of ```feed_dict```
 
 * Small Task 1: learn sorting characters
 
     ```  python train_letters.py --tied_embedding --label_smoothing ```
         
     ```
-    INFO:tensorflow:lr = 0.000914113 (22.901 sec)
-    INFO:tensorflow:Saving checkpoints for 4000 into ./saved/model.ckpt.
-    INFO:tensorflow:Loss for final step: 0.707183.
-    INFO:tensorflow:Restoring parameters from ./saved/model.ckpt-4000
-    apple -> aelpp
-    common -> cmmnoo
-    zhedong -> deghnoz
+   INFO:tensorflow:Loss for final step: 0.69530267.
+   INFO:tensorflow:Calling model_fn.
+   INFO:tensorflow:Done calling model_fn.
+   INFO:tensorflow:Graph was finalized.
+   INFO:tensorflow:Restoring parameters from ./saved/model.ckpt-5000
+   INFO:tensorflow:Running local_init_op.
+   INFO:tensorflow:Done running local_init_op.
+   apple -> aelpp
+   common -> cmmnoo
+   zhedong -> deghnoz
     ```
 
 * Small Task 2: learn chinese dialog
