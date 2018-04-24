@@ -125,7 +125,7 @@ def _model_fn_predict(features, mode, params):
         temp = tf.concat([temp[:, 1:], ids], -1)
 
         x = tf.concat([temp[:, -(i+1):], temp[:, :-(i+1)]], -1)
-        x = tf.reshape(x, [tf.shape(temp)[0], 20])
+        x = tf.reshape(x, [tf.shape(temp)[0], args.target_max_len])
         i = i + 1
         return i, x, temp
 
