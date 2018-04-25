@@ -16,6 +16,8 @@
 
 * I will keep updating this project to match the latest version of TF
 
+* I will improve the existing code by moving to efficient pipeline (```TF Data API``` and ```TF Estimator API```)
+
 ---
 #### Installation 
 * Python 3 and [Jupyter Notebook](http://jupyter.org/) are required
