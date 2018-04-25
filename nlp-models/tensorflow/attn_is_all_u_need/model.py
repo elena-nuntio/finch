@@ -80,11 +80,7 @@ def forward_pass(sources, targets, params, reuse=False):
         return logits
 
 
-def _model_fn_train(features, mode, params):
-    logits = forward_pass(features['source'], features['target'], params)
-    _ = forward_pass(features['source'], features['target'], params, reuse=True)
-    log_tensors = {}
-
+def _model_fn_train(features, mode, params, logits):
     with tf.name_scope('backward'):
         targets = features['target']
         masks = tf.to_float(tf.not_equal(targets, 0))
@@ -103,8 +99,7 @@ def _model_fn_train(features, mode, params):
             lr = tf.train.exponential_decay(1e-3, tf.train.get_global_step(), 100000, 0.1)
         else:
             raise ValueError("lr decay strategy must be one of 'noam' and 'exp'")
-        log_tensors['lr'] = lr
-        log_hook = tf.train.LoggingTensorHook(log_tensors, every_n_iter=100)
+        log_hook = tf.train.LoggingTensorHook({'lr': lr}, every_n_iter=100)
         
         train_op = tf.train.AdamOptimizer(lr).minimize(loss_op, global_step=tf.train.get_global_step())
     return tf.estimator.EstimatorSpec(
@@ -112,8 +107,6 @@ def _model_fn_train(features, mode, params):
 
 
 def _model_fn_predict(features, mode, params):
-    _ = forward_pass(features['source'], features['target'], params)
-
     def cond(i, x, temp):
         return i < args.target_max_len
 
@@ -126,7 +119,7 @@ def _model_fn_predict(features, mode, params):
 
         x = tf.concat([temp[:, -(i+1):], temp[:, :-(i+1)]], -1)
         x = tf.reshape(x, [tf.shape(temp)[0], args.target_max_len])
-        i = i + 1
+        i += 1
         return i, x, temp
 
     _, res, _ = tf.while_loop(cond, body, [tf.constant(0), features['target'], features['target']])
@@ -135,8 +128,10 @@ def _model_fn_predict(features, mode, params):
 
 
 def tf_estimator_model_fn(features, labels, mode, params):
+    logits = forward_pass(features['source'], features['target'], params)
     if mode == tf.estimator.ModeKeys.TRAIN:
-        return _model_fn_train(features, mode, params)
+        _ = forward_pass(features['source'], features['target'], params, reuse=True)
+        return _model_fn_train(features, mode, params, logits)
     if mode == tf.estimator.ModeKeys.PREDICT:
         return _model_fn_predict(features, mode, params)
 

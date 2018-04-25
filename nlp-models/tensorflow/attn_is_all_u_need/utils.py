@@ -21,7 +21,7 @@ def greedy_decode(test_words, tf_estimator, dl):
     target_idx2word = {i: w for w, i in dl.target_word2idx.items()}
     for i, test_word in enumerate(test_words):
         ans = ''.join([target_idx2word[id] for id in pred_ids[i]])
-        print(test_word, '->', ans.replace('<end>', '').replace('<start>', ''))
+        print(test_word, '->', ans.replace('<end>', ''))
 
 
 def prepare_params(dl):
