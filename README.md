@@ -16,7 +16,7 @@
 
 * I will keep updating this project to match the latest version of TF
 
-* I will improve the existing code by moving to efficient pipeline (```TF Data API``` and ```TF Estimator API```)
+* I will improve the existing code to new interface (```TF Data API``` and ```TF Estimator API```)
 
 ---
 #### Installation 
