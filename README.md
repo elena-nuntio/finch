@@ -11,14 +11,7 @@
 * [Question Answering（问题回答）](https://github.com/zhedongzheng/finch/blob/master/README.md#question-answering%E9%97%AE%E9%A2%98%E5%9B%9E%E7%AD%94)
 * [Recommender System（推荐系统）](https://github.com/zhedongzheng/finch/blob/master/README.md#recommender-system%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F)
 * [Data Argumentation（数据增强）](https://github.com/zhedongzheng/finch/blob/master/README.md#data-argumentation%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%BC%BA)
----
-* I use light-weight datasets, friendly to people who only have CPU
 
-* I will keep updating this project to match the latest version of TF
-
-* I will transform the existing code to efficient interface (```TF Data``` and ```TF Estimator```)
-
----
 #### Installation 
 * Python 3 and [Jupyter Notebook](http://jupyter.org/) are required
 
@@ -31,10 +24,6 @@
     ```
     $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
     ```
----
-#### Issues Have Been Asked
-* [Is the function "add_encoder_layer" in "seq2seq_ultimate.py" correct?](https://github.com/zhedongzheng/finch/issues/1)
-* [in vae code, how to use LSTMcell?](https://github.com/zhedongzheng/finch/issues/2)
 ---
 #### Word Embedding（词向量）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
