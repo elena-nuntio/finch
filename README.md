@@ -54,7 +54,7 @@
 
 * Char-Aware CNN + RNN &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_rnn_text_gen.py) &nbsp; &nbsp; [PTB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_rnn_text_gen_test.ipynb) &nbsp; &nbsp;
 
-* Only-Attention Language Model &nbsp; &nbsp; [TF Data Interface](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
+* Only-Attention Language Model &nbsp; &nbsp; [TF Dataset Interface](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
     
 * [VAE](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/vae) &nbsp; | &nbsp; [Controllable VAE](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/toward-control)
 
