@@ -24,7 +24,7 @@
     ```
     $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
     ```
-* I am starting to move existing code into new powerful interfaces ``` tf.data.Dataset ``` and ``` tf.estimator.Estimator ```
+* I am starting to move existing code into new powerful interfaces [tf.data.Dataset](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [tf.estimator.Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
 ---
 
 #### Word Embedding（词向量）
