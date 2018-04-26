@@ -26,7 +26,6 @@
     ```
 
 ---
-* ``` => TF Estimator API ``` and ``` => TF Data API ``` push existing code into efficient data pipelines
 
 #### Word Embedding（词向量）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
