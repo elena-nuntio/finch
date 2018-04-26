@@ -24,9 +24,10 @@
     ```
     $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
     ```
-    
-* ``` => TF Estimator API ``` and ``` => TF Data API ``` transform existing code into efficient pipelines
+
 ---
+* ``` => TF Estimator API ``` and ``` => TF Data API ``` transform existing code into efficient data pipelines
+
 #### Word Embedding（词向量）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
 
