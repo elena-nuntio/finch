@@ -72,16 +72,15 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 
 * [POS Tagging](https://www.clips.uantwerpen.be/conll2000/chunking/)
 
-    * Bi-RNN + CRF &nbsp; &nbsp; [tf.estimator.Estimator](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/pos_birnn_crf_test.ipynb)
+    * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/pos_birnn_crf_test.ipynb)
 
-    * Conv1D + CRF &nbsp; &nbsp; [tf.estimator.Estimator](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/cnn_seq_label_pos_test.ipynb)
+    * [Conv1D + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/cnn_seq_label_pos_test.ipynb)
 
 * [Chinese Segmentation](http://sighan.cs.uchicago.edu/bakeoff2005/)
 
-    * Bi-RNN + CRF &nbsp; &nbsp; [tf.estimator.Estimator](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/chseg_birnn_crf_test.ipynb)
+    * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/chseg_birnn_crf_test.ipynb)
 
-    * Conv1D + CRF &nbsp; &nbsp; [tf.estimator.Estimator](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/cnn_seq_label_chseg_test.ipynb)
-
+    * [Conv1D + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/cnn_seq_label_chseg_test.ipynb)
 
 #### Sequence to Sequence（序列到序列）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_1.png" height='100'>
