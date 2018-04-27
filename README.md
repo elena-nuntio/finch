@@ -68,13 +68,13 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 #### Sequence Labelling（序列标记）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_4.jpg" height='100'>
 
-* POS Tagging
+* [POS Tagging](https://www.clips.uantwerpen.be/conll2000/chunking/)
 
     * Bi-RNN + CRF &nbsp; &nbsp; [tf.estimator.Estimator](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/pos_birnn_crf_test.ipynb)
 
     * Conv1D + CRF &nbsp; &nbsp; [tf.estimator.Estimator](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/cnn_seq_label_pos_test.ipynb)
 
-* Chinese Segmentation
+* [Chinese Segmentation](http://sighan.cs.uchicago.edu/bakeoff2005/)
 
     * Bi-RNN + CRF &nbsp; &nbsp; [tf.estimator.Estimator](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/chseg_birnn_crf_test.ipynb)
 
