@@ -39,7 +39,7 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 #### Text Classification（文本分类）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_2.png" height='100'>
 
-* [IMDB Movie Reviews Sentiment Classification](http://ai.stanford.edu/~amaas/data/sentiment/)
+* [IMDB Movie Reviews Sentiment](http://ai.stanford.edu/~amaas/data/sentiment/)
 
     * Conv1D &nbsp; &nbsp; [tf.estimator.Estimator](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/concat_conv_1d_text_clf_imdb_test.ipynb)
 
