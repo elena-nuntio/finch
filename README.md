@@ -52,7 +52,7 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 #### Text Generation（文本生成）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_5.png" height='100'>
 
-* Writing《Anna Karenina》
+* Novel《Anna Karenina》
 
     *  [Self-Attention LM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
 
