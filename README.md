@@ -117,7 +117,9 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 #### Recommender System（推荐系统）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_9.png" height='100'>
 
-* [Hybrid Neural Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/movielens)
+* [Movielens](https://grouplens.org/datasets/movielens/)
+
+    * [Hybrid Neural Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/movielens)
 
 #### Data Argumentation（数据增强）
 * [Bi-Translation](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/other/bi_translation.ipynb)
