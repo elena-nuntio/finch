@@ -85,7 +85,7 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 #### Sequence to Sequence（序列到序列）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_1.png" height='100'>
 
-* Character Sorting
+* Example: Character Sorting
 
     * Seq2Seq &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq.py) &nbsp; &nbsp; [Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq_test.ipynb)
 
