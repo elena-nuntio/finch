@@ -91,7 +91,7 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 
 * CTC &nbsp; | &nbsp; [Speech Recognition](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/asr)
 
-* Attention Is All You Need &nbsp; &nbsp; [TF Estimator API](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
+* Attention Is All You Need &nbsp; &nbsp; [tf.estimator.Estimator](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
 
 #### Question Answering（问题回答）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/dmn-details.png" height='100'>
