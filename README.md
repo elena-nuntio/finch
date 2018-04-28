@@ -95,7 +95,9 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 
 * [tf.estimator.Estimator API](https://www.tensorflow.org/api_docs/python/tf/estimator)
 
-    * [Attention Is All You Need](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
+    * Sorting Chars / Dialogue
+
+        * [Attention Is All You Need](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
 
 * ``` feed_dict ```
 
