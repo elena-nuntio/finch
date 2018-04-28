@@ -11,3 +11,17 @@
         * AI视角: 怎样利用知识库来辅助理解人的语言
 
         * DB视角: 用图的方式去存储知识
+
+* Chapter 1 Knowledge Graph Overview
+
+    * Essence of KG
+
+        * Web: similar to hyperlinks between text, build semantic links between data, and support semantic searching
+
+        * NLP: how to extract semantic and structural data from text
+
+        * KR: how to use computer symbols to represent and process knowledge
+
+        * AI: how to use knowledge base to help understand human language
+
+        * DB: store knowledge in graphs
