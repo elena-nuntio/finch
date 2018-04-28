@@ -1,4 +1,4 @@
-## Chinese
+#### Chinese
 * 第一讲 知识图谱概览
 
     * KG的本质
@@ -13,7 +13,7 @@
 
         * DB视角: 用图的方式去存储知识
 
-## English
+#### English
 * Chapter 1 KG Overview
 
     * Essence of KG
