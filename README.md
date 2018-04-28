@@ -54,7 +54,7 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 
     * Writing《Anna Karenina》
     
-        *  [Attention LM (no RNN / CNN)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
+        *  [Attention Language Model (no RNN / CNN)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
 
 * [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
