@@ -76,6 +76,12 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 #### Sequence Labelling（序列标记）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_4.jpg" height='100'>
 
+* [tf.data.Dataset API](https://www.tensorflow.org/api_docs/python/tf/data)
+
+    * [Chinese Segmentation](http://sighan.cs.uchicago.edu/bakeoff2005/)
+
+        * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/chseg_birnn_crf_test.ipynb)
+
 * [POS Tagging](https://www.clips.uantwerpen.be/conll2000/chunking/)
 
     * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/pos_birnn_crf_test.ipynb)
@@ -83,8 +89,6 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
     * [Conv1D + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/cnn_seq_label_pos_test.ipynb)
 
 * [Chinese Segmentation](http://sighan.cs.uchicago.edu/bakeoff2005/)
-
-    * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/chseg_birnn_crf_test.ipynb)
 
     * [Conv1D + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/cnn_seq_label_chseg_test.ipynb)
 
