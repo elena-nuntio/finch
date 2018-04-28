@@ -80,9 +80,9 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 
     * [POS Tagging](https://www.clips.uantwerpen.be/conll2000/chunking/)
 
-        * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/pos_birnn_crf_test.ipynb)
+        * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/pos_birnn_crf_test.ipynb)
 
-        * [Conv1D + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/cnn_seq_label_pos_test.ipynb)
+        * [Conv1D + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/cnn_seq_label_pos_test.ipynb)
 
     * [Chinese Segmentation](http://sighan.cs.uchicago.edu/bakeoff2005/)
 
