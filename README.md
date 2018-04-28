@@ -137,4 +137,4 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 * [Bi-Translation](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/other/bi_translation.ipynb)
 
 #### Knowledge Grpah（知识图谱）
-* [Notes](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md)
+* [Notes](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md)
