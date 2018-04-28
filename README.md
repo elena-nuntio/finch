@@ -60,7 +60,7 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
     
         *  [Self-Attention LM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
 
-* ``` feed_dict ```
+* [feed_dict](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
     * Char-RNN + Multinomial Sampling &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/rnn_text_gen.py) &nbsp; &nbsp; [English Story Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/rnn_text_gen_test.ipynb) &nbsp; &nbsp; [Chinese Address Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/rnn_text_gen_addr.ipynb)
 
