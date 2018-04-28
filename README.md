@@ -52,7 +52,7 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 
 * [tf.data.Dataset API](https://www.tensorflow.org/api_docs/python/tf/data)
 
-    * Novel《Anna Karenina》
+    * Writing《Anna Karenina》
     
         *  [Self-Attention LM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
 
