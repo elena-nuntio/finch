@@ -39,9 +39,11 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 #### Text Classification（文本分类）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_2.png" height='100'>
 
-* [IMDB Movie Reviews Sentiment](http://ai.stanford.edu/~amaas/data/sentiment/)
+* [tf.estimator.Estimator API](https://www.tensorflow.org/api_docs/python/tf/estimator)
 
-    * tf.estimator.Estimator API
+    * [IMDB Movie Reviews Sentiment](http://ai.stanford.edu/~amaas/data/sentiment/)
+
+    
     
         *  [Conv1D](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/concat_conv_1d_text_clf_imdb_test.ipynb)
 
@@ -54,9 +56,9 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 #### Text Generation（文本生成）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_5.png" height='100'>
 
-* Novel《Anna Karenina》
+* [tf.data.Dataset API](https://www.tensorflow.org/api_docs/python/tf/data)
 
-    * tf.data.Dataset API
+    * Novel《Anna Karenina》
     
         *  [Self-Attention LM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
 
@@ -89,6 +91,10 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 #### Sequence to Sequence（序列到序列）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_1.png" height='100'>
 
+* [tf.estimator.Estimator API](https://www.tensorflow.org/api_docs/python/tf/estimator)
+
+    * [Attention Is All You Need](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
+
 * Sorting Chars / Dialogue
 
     * Seq2Seq &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq.py) &nbsp; &nbsp; [Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq_test.ipynb)
@@ -102,10 +108,6 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
         * Seq2Seq + BiLSTM Encoder + Attention + Beam-Search &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq_ultimate.py) &nbsp; &nbsp; [Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq_ultimate_test.ipynb) 
 
     * Pointer Network &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/pointer_net.py) &nbsp; &nbsp; [Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/pointer_net_test.ipynb)
-    
-    * tf.estimator.Estimator API
-    
-        * [Attention Is All You Need](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
 
 * Speech Recognition
 
