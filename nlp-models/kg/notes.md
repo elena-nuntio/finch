@@ -12,7 +12,7 @@
 
         * DB视角: 用图的方式去存储知识
 
-* Chapter 1 Knowledge Graph Overview
+* Chapter 1 KG Overview
 
     * Essence of KG
 
