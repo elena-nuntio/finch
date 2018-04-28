@@ -20,7 +20,7 @@
 
         * NLP: how to extract semantic and structural data from text
 
-        * KR: how to use computer symbols to represent and process knowledge
+        * KR: how to use computational symbols to represent and process knowledge
 
         * AI: how to use knowledge base to help understand human language
 
