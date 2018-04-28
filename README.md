@@ -43,7 +43,7 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 
         *  [Bi-RNN](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/rnn_text_clf_imdb_test.ipynb)
 
-        *  [Only-Attention](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/only_attn_text_clf_imdb_test.ipynb) (no RNN / CNN)
+        *  [Attention (no RNN / CNN)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/only_attn_text_clf_imdb_test.ipynb)
 
         *  [TF-IDF + LR](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/tfidf_imdb_test.ipynb)
 
@@ -54,7 +54,7 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 
     * Writing《Anna Karenina》
     
-        *  [Self-Attention LM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb) (no RNN / CNN)
+        *  [Attention LM (no RNN / CNN)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb) (no RNN / CNN)
 
 * [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
