@@ -78,7 +78,7 @@ Starting to move existing code into new powerful interfaces [tf.data.Dataset](ht
 
 * [Chinese Segmentation](http://sighan.cs.uchicago.edu/bakeoff2005/)
 
-    * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/chseg_birnn_crf_test.ipynb)
+    * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/chseg_birnn_crf_test.ipynb)
 
     * [Conv1D + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/cnn_seq_label_chseg_test.ipynb)
 
