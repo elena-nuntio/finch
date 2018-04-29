@@ -25,7 +25,7 @@
 
 * [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding) is the old approach, not efficient for industry use
 
-* Starting to move existing code into new powerful interfaces [tf.data.Dataset](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [tf.estimator.Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
+* Starting to move existing code into new efficient interfaces [tf.data.Dataset](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [tf.estimator.Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
 
 #### Word Embedding（词向量）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
