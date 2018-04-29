@@ -67,6 +67,7 @@ class PointerNetwork:
                 _, state = cell(inp, state)
                 output = loop_fn(state, masks, reuse=True) if i > 0 else loop_fn(state, masks)
                 outputs.append(output)
+                output = tf.stop_gradient(output)
                 idx = tf.argmax(output, -1)
                 inp = point(idx)
             return outputs
