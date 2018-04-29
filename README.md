@@ -97,13 +97,13 @@
 
 * [tf.estimator.Estimator API](https://www.tensorflow.org/api_docs/python/tf/estimator)
 
-    * Sorting Chars / Dialogue
+    * Learning to sort / Dialogue
 
         * [Attention Is All You Need](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
 
 * [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
-    * Sorting Chars / Dialogue
+    * Learning to sort / Dialogue
 
         * Seq2Seq &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq.py) &nbsp; &nbsp; [Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq_test.ipynb)
 
