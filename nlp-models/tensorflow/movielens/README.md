@@ -8,7 +8,7 @@ pip install paddlepaddle tensorflow pandas tqdm
 
 ```
 cd ./data
-python movielens_paddle.py
+python make_data.py
 cd ..
 python train.py
 ```
