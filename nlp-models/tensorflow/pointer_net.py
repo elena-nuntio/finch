@@ -25,7 +25,7 @@ class PointerNetwork:
 
 
     def add_input_layer(self):
-        self.X = tf.placeholder(tf.int32, [None, self.max_len])
+        self.X = tf.placeholder(tf.int32, [None, None])
         self.Y = tf.placeholder(tf.int32, [None, self.max_len])
         self.X_seq_len = tf.placeholder(tf.int32, [None])
         self.Y_seq_len = tf.placeholder(tf.int32, [None])
