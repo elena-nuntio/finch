@@ -51,9 +51,8 @@ class PointerNetwork:
 
 
     def add_decoder_layer(self):
-        def attention(state, masks, reuse=None):
-            query = tf.expand_dims(state, -1)
-            keys = tf.layers.dense(self.enc_rnn_out, self.rnn_size)
+        def attention(query, keys, masks):
+            query = tf.expand_dims(query, -1)
             align = tf.squeeze(tf.matmul(keys, query), -1)
             return (align * masks)
 
@@ -63,9 +62,10 @@ class PointerNetwork:
             starts = tf.fill([self.batch_size], self._x_go)
             inp = tf.nn.embedding_lookup(embedding, starts)
             masks = tf.to_float(tf.sign(self.X))
+            keys = tf.layers.dense(self.enc_rnn_out, self.rnn_size)
             for i in range(self.max_len):
                 _, state = cell(inp, state)
-                output = attention(state, masks, reuse=i>0)
+                output = attention(state, keys, masks)
                 outputs.append(output)
                 output = tf.stop_gradient(output)
                 idx = tf.argmax(output, -1)
