@@ -1,5 +1,5 @@
-* [Chinese](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md#chinese)
-* [English](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md#english)
+* [Chinese Version](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md#chinese)
+* [English Version](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md#english)
 
 #### Chinese
 * 第一讲 知识图谱概览
