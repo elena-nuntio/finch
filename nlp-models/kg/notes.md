@@ -1,32 +1,29 @@
-* [Chinese Version](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md#chinese)
-* [English Version](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md#english)
+Translation from Chinese to English is done by Zhedong Zheng
 
-#### Chinese
 * 第一讲 知识图谱概览
 
+  Chapter 1 Knowledge Graph Overview
+
     * KG的本质
+    
+      Essence of KG
 
         * Web视角: 像建立文本之间的超链接一样，建立数据之间的语义链接，并支持语义搜索
 
+          Web: similar to hyperlinks between text, build semantic links between data, and support semantic searching
+
         * NLP视角: 怎样从文本中抽取语义和结构化数据
+
+          NLP: how to extract semantic and structural data from text
 
         * KR视角: 怎样利用计算机符号来表示和处理知识
 
+          KR: how to use computational symbols to represent and process knowledge
+
         * AI视角: 怎样利用知识库来辅助理解人的语言
+
+          AI: how to use knowledge base to help understand human language
 
         * DB视角: 用图的方式去存储知识
 
-#### English
-* Chapter 1 KG Overview
-
-    * Essence of KG
-
-        * Web: similar to hyperlinks between text, build semantic links between data, and support semantic searching
-
-        * NLP: how to extract semantic and structural data from text
-
-        * KR: how to use computational symbols to represent and process knowledge
-
-        * AI: how to use knowledge base to help understand human language
-
-        * DB: store knowledge in graphs
+          DB: store knowledge in graphs
