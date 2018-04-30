@@ -1,5 +1,7 @@
 Translation from Chinese to English is done by Zhedong Zheng
 
+---
+
 * 第一讲 知识图谱概览
 
   Chapter 1 Knowledge Graph Overview
