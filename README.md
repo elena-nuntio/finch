@@ -127,18 +127,22 @@ To Be Done
 #### Question Answering（问题回答）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/dmn-details.png" height='100'>
 
-* [Facebook bAbI](https://research.fb.com/downloads/babi/)
+* [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
-    * [End-To-End Memory Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/end2end_mn) 
+    * [Facebook bAbI](https://research.fb.com/downloads/babi/)
 
-    * [Dynamic Memory Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/dmn) 
+        * [End-To-End Memory Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/end2end_mn) 
+
+        * [Dynamic Memory Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/dmn) 
 
 #### Recommender System（推荐系统）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_9.png" height='100'>
 
-* [Movielens](https://grouplens.org/datasets/movielens/)
+* [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
-    * [Hybrid Neural Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/movielens)
+    * [Movielens](https://grouplens.org/datasets/movielens/)
+
+        * [Hybrid Neural Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/movielens)
 
 #### Knowledge Graph（知识图谱）
 * [Course Notes](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md)
