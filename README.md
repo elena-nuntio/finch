@@ -31,7 +31,7 @@
 #### Word Embedding（词向量）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
 
-* [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
+* [Interface: feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
     * Skip-Gram &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/word2vec_skipgram.py) &nbsp; &nbsp; [PTB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/word2vec_skipgram_test.ipynb)
 
@@ -40,7 +40,7 @@
 #### Text Classification（文本分类）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_2.png" height='100'>
 
-* [tf.estimator.Estimator API](https://www.tensorflow.org/api_docs/python/tf/estimator)
+* [Interface: tf.estimator.Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator)
 
     * [IMDB Movie Reviews Sentiment](http://ai.stanford.edu/~amaas/data/sentiment/)
 
@@ -55,7 +55,7 @@
 #### Text Generation（文本生成）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_5.png" height='100'>
 
-* [tf.data.Dataset API](https://www.tensorflow.org/api_docs/python/tf/data)
+* [Interface: tf.data.Dataset](https://www.tensorflow.org/api_docs/python/tf/data)
 
     * Writing《Anna Karenina》
     
@@ -63,7 +63,7 @@
     
         *  [Attention Language Model (no RNN / CNN)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
 
-* [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
+* [Interface: feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
     * CNN-RNN Language Model &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_rnn_text_gen.py) &nbsp; &nbsp; [PTB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_rnn_text_gen_test.ipynb) &nbsp; &nbsp;
 
@@ -81,7 +81,7 @@ To Be Done
 #### Sequence Labelling（序列标记）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_4.jpg" height='100'>
 
-* [tf.data.Dataset API](https://www.tensorflow.org/api_docs/python/tf/data)
+* [Interface: tf.data.Dataset](https://www.tensorflow.org/api_docs/python/tf/data)
 
     * [POS Tagging](https://www.clips.uantwerpen.be/conll2000/chunking/)
 
@@ -98,13 +98,13 @@ To Be Done
 #### Sequence to Sequence（序列到序列）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_1.png" height='100'>
 
-* [tf.estimator.Estimator API](https://www.tensorflow.org/api_docs/python/tf/estimator)
+* [Interface: tf.estimator.Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator)
 
     * Learning to Sort
 
         * [Attention Is All You Need](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
 
-* [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
+* [Interface: feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
     * Learning to Sort
 
@@ -127,7 +127,7 @@ To Be Done
 #### Question Answering（问题回答）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/dmn-details.png" height='100'>
 
-* [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
+* [Interface: feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
     * [Facebook bAbI](https://research.fb.com/downloads/babi/)
 
@@ -138,7 +138,7 @@ To Be Done
 #### Recommender System（推荐系统）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_9.png" height='100'>
 
-* [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
+* [Interface: feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
     * [Movielens](https://grouplens.org/datasets/movielens/)
 
