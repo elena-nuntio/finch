@@ -1,6 +1,5 @@
-from __future__ import print_function
 from config import args
-from modified_tf_classes import BasicDecoder, BeamSearchDecoder
+from modified import ModifiedBasicDecoder, ModifiedBeamSearchDecoder
 
 import tensorflow as tf
 import numpy as np
@@ -90,7 +89,7 @@ class VRAE:
             helper = tf.contrib.seq2seq.TrainingHelper(
                 inputs = tf.nn.embedding_lookup(tied_embedding, self.dec_inp),
                 sequence_length = self.dec_seq_len)
-            decoder = BasicDecoder(
+            decoder = ModifiedBasicDecoder(
                 cell = self._rnn_cell(),
                 helper = helper,
                 initial_state = init_state,
@@ -110,7 +109,7 @@ class VRAE:
         with tf.variable_scope('decoding', reuse=True):
             init_state = tf.layers.dense(self.z, args.rnn_size, tf.nn.elu, reuse=True)
 
-            decoder = BeamSearchDecoder(
+            decoder = ModifiedBeamSearchDecoder(
                 cell = self._rnn_cell(reuse=True),
                 embedding = tied_embedding,
                 start_tokens = tf.tile(tf.constant(
