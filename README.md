@@ -76,7 +76,11 @@
 #### Text Matching（文本匹配）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_10.jpeg" height='200'>
 
-To Be Done
+* [Interface: tf.estimator.Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator)
+
+    * [Movielens](https://grouplens.org/datasets/movielens/)
+
+        * [User-Item Matching](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/movielens)
 
 #### Sequence Labelling（序列标记）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_4.jpg" height='100'>
@@ -126,15 +130,6 @@ To Be Done
         * [End-To-End Memory Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/end2end_mn) 
 
         * [Dynamic Memory Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/dmn) 
-
-#### Recommender System（推荐系统）
-<img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_9.png" height='100'>
-
-* [Interface: tf.estimator.Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator)
-
-    * [Movielens](https://grouplens.org/datasets/movielens/)
-
-        * [Hybrid Neural Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/movielens)
 
 #### Knowledge Graph（知识图谱）
 * [Course Notes](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md)
