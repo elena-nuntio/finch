@@ -23,7 +23,7 @@
     ```
 ---
 
-* [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding) is the most common interface, but not efficient for industry use
+* [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding) is the most common and flexible interface, but not efficient for industry use
 
 * Starting to move existing code into new efficient interfaces [tf.data.Dataset](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [tf.estimator.Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
 ---
