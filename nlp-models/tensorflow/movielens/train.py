@@ -1,54 +1,19 @@
 from __future__ import print_function
-from model import Model
+from model import model_fn
 from data import DataLoader
 
 import tensorflow as tf
-
+#tf.logging.set_verbosity(tf.logging.INFO)
 
 NUM_EPOCHS = 50
-
+BATCH_SIZE = 256
 
 def main():
-    dl = DataLoader()
-    model = Model()
-
-    sess = tf.Session()
-    sess.run(tf.global_variables_initializer())
-
-    n_batch = len(dl.data['train']['Y']) // dl.batch_size
-    for epoch in range(NUM_EPOCHS):
-        for i, (user_id, gender_id, age_id, job_id,
-            movie_id, category_ids, movie_title,
-            score) in enumerate(dl.next_train_batch()):
-
-            loss = model.train_batch(sess,
-                user_id, gender_id, age_id, job_id,
-                movie_id, category_ids, movie_title,
-                score)
-            
-            if i % 500 == 0:
-                print("Epoch [%d/%d] | Batch [%d/%d] | Loss: %.2f | LR: %.4f" % (
-                    epoch, NUM_EPOCHS, i, n_batch, loss, model.lr))
-        
-        losses = []
-        for i, (user_id, gender_id, age_id, job_id,
-            movie_id, category_ids, movie_title,
-            score) in enumerate(dl.next_test_batch()):
-
-            pred, loss = model.predict_batch(sess,
-                user_id, gender_id, age_id, job_id,
-                movie_id, category_ids, movie_title,
-                score)
-            losses.append(loss)
-        print('-'*30)
-        print('Testing losses:', sum(losses)/len(losses))
-        print('Prediction: %.2f, Actual: %.2f' % (pred[-5], score[-5]))
-        print('Prediction: %.2f, Actual: %.2f' % (pred[-4], score[-4]))
-        print('Prediction: %.2f, Actual: %.2f' % (pred[-3], score[-3]))
-        print('Prediction: %.2f, Actual: %.2f' % (pred[-2], score[-2]))
-        print('Prediction: %.2f, Actual: %.2f' % (pred[-1], score[-1]))
-        print('-'*12)
-
+    model = tf.estimator.Estimator(model_fn, params={'lr': 1e-4})
+    dl = DataLoader(BATCH_SIZE)
+    for i in xrange(NUM_EPOCHS):
+        model.train(dl.train_pipeline())
+        print('Testing loss:', model.evaluate(dl.eval_pipeline())['mse'])
 
 if __name__ == '__main__':
     main()

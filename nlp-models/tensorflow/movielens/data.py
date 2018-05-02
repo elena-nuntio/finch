@@ -3,10 +3,11 @@ from tqdm import tqdm
 
 import pandas as pd
 import numpy as np
+import tensorflow as tf
 
 
 class DataLoader:
-    def __init__(self, batch_size=256):
+    def __init__(self, batch_size):
         self.data = {
             'train': {
                 'X': {
@@ -68,24 +69,30 @@ class DataLoader:
 
         self.data[routine]['Y'] = csv['score'].values
     
-    def next_train_batch(self):
-        for i in range(0, len(self.data['train']['X']['user_id']), self.batch_size):
-            yield (self.data['train']['X']['user_id'][i : i+self.batch_size],
-                   self.data['train']['X']['gender_id'][i : i+self.batch_size],
-                   self.data['train']['X']['age_id'][i : i+self.batch_size],
-                   self.data['train']['X']['job_id'][i : i+self.batch_size],
-                   self.data['train']['X']['movie_id'][i : i+self.batch_size],
-                   self.data['train']['X']['category_ids'][i : i+self.batch_size],
-                   self.data['train']['X']['movie_title'][i : i+self.batch_size],
-                   self.data['train']['Y'][i : i+self.batch_size])
+    def train_pipeline(self):
+        return tf.estimator.inputs.numpy_input_fn(
+            x = {
+                'user_id': self.data['train']['X']['user_id'],
+                'gender_id': self.data['train']['X']['gender_id'],
+                'age_id': self.data['train']['X']['age_id'],
+                'job_id': self.data['train']['X']['job_id'],
+                'movie_id': self.data['train']['X']['movie_id'],
+                'category_ids': self.data['train']['X']['category_ids'],
+                'movie_title': self.data['train']['X']['movie_title']},
+            y = self.data['train']['Y'],
+            batch_size = self.batch_size,
+            shuffle = True)
 
-    def next_test_batch(self):
-        for i in range(0, len(self.data['test']['X']['user_id']), self.batch_size):
-            yield (self.data['test']['X']['user_id'][i : i+self.batch_size],
-                   self.data['test']['X']['gender_id'][i : i+self.batch_size],
-                   self.data['test']['X']['age_id'][i : i+self.batch_size],
-                   self.data['test']['X']['job_id'][i : i+self.batch_size],
-                   self.data['test']['X']['movie_id'][i : i+self.batch_size],
-                   self.data['test']['X']['category_ids'][i : i+self.batch_size],
-                   self.data['test']['X']['movie_title'][i : i+self.batch_size],
-                   self.data['test']['Y'][i : i+self.batch_size])
+    def eval_pipeline(self):
+        return tf.estimator.inputs.numpy_input_fn(
+            x = {
+                'user_id': self.data['test']['X']['user_id'],
+                'gender_id': self.data['test']['X']['gender_id'],
+                'age_id': self.data['test']['X']['age_id'],
+                'job_id': self.data['test']['X']['job_id'],
+                'movie_id': self.data['test']['X']['movie_id'],
+                'category_ids': self.data['test']['X']['category_ids'],
+                'movie_title': self.data['test']['X']['movie_title']},
+            batch_size = self.batch_size,
+            y = self.data['test']['Y'],
+            shuffle = False)
