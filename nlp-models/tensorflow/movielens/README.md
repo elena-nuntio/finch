@@ -12,39 +12,56 @@ python make_data.py
 cd ..
 python train.py
 ```
-```
-------------
-Epoch [48/50] | Batch [0/3516] | Loss: 2.50 | LR: 0.0001
-Epoch [48/50] | Batch [500/3516] | Loss: 1.71 | LR: 0.0001
-Epoch [48/50] | Batch [1000/3516] | Loss: 1.50 | LR: 0.0001
-Epoch [48/50] | Batch [1500/3516] | Loss: 2.43 | LR: 0.0001
-Epoch [48/50] | Batch [2000/3516] | Loss: 2.06 | LR: 0.0001
-Epoch [48/50] | Batch [2500/3516] | Loss: 5.85 | LR: 0.0001
-Epoch [48/50] | Batch [3000/3516] | Loss: 3.06 | LR: 0.0001
-Epoch [48/50] | Batch [3500/3516] | Loss: 2.03 | LR: 0.0001
-------------------------------
-Testing losses: 2.96130696282
-Prediction: 2.96, Actual: 3.00
-Prediction: 1.92, Actual: 3.00
-Prediction: 2.39, Actual: 3.00
-Prediction: 2.82, Actual: 3.00
-Prediction: 3.37, Actual: 3.00
-------------
-Epoch [49/50] | Batch [0/3516] | Loss: 2.50 | LR: 0.0001
-Epoch [49/50] | Batch [500/3516] | Loss: 1.70 | LR: 0.0001
-Epoch [49/50] | Batch [1000/3516] | Loss: 1.51 | LR: 0.0001
-Epoch [49/50] | Batch [1500/3516] | Loss: 2.44 | LR: 0.0001
-Epoch [49/50] | Batch [2000/3516] | Loss: 2.04 | LR: 0.0001
-Epoch [49/50] | Batch [2500/3516] | Loss: 5.82 | LR: 0.0001
-Epoch [49/50] | Batch [3000/3516] | Loss: 3.06 | LR: 0.0001
-Epoch [49/50] | Batch [3500/3516] | Loss: 2.00 | LR: 0.0001
-------------------------------
-Testing losses: 2.97281685357
-Prediction: 2.92, Actual: 3.00
-Prediction: 1.72, Actual: 3.00
-Prediction: 2.40, Actual: 3.00
-Prediction: 2.69, Actual: 3.00
-Prediction: 3.32, Actual: 3.00
-------------
 
+```
+Testing loss: 3.7632217
+Testing loss: 3.4815586
+Testing loss: 3.5643203
+Testing loss: 3.313573
+Testing loss: 3.2979832
+Testing loss: 3.2159936
+Testing loss: 3.1644676
+Testing loss: 3.1356244
+Testing loss: 3.115319
+Testing loss: 3.0999339
+Testing loss: 3.0713046
+Testing loss: 3.0459547
+Testing loss: 3.0222063
+Testing loss: 3.0040457
+Testing loss: 3.0101979
+Testing loss: 2.9714873
+Testing loss: 3.002457
+Testing loss: 2.9743514
+Testing loss: 2.95745
+Testing loss: 2.970417
+Testing loss: 2.9601738
+Testing loss: 2.952818
+Testing loss: 2.9619434
+Testing loss: 2.9600794
+Testing loss: 2.9565902
+Testing loss: 2.9566388
+Testing loss: 2.955195
+Testing loss: 2.9507756
+Testing loss: 2.9355392
+Testing loss: 2.9538527
+Testing loss: 2.9356554
+Testing loss: 2.9418507
+Testing loss: 2.9342399
+Testing loss: 2.94277
+Testing loss: 2.933206
+Testing loss: 2.9272215
+Testing loss: 2.9307425
+Testing loss: 2.9275203
+Testing loss: 2.9275682
+Testing loss: 2.9228027
+Testing loss: 2.9249346
+Testing loss: 2.9238608
+Testing loss: 2.9257743
+Testing loss: 2.9205306
+Testing loss: 2.9220045
+Testing loss: 2.920885
+Testing loss: 2.9214213
+Testing loss: 2.9231598
+Testing loss: 2.9181385
+Testing loss: 2.928637
 ```
