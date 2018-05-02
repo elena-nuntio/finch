@@ -7,10 +7,10 @@ pip install paddlepaddle tensorflow pandas tqdm
 ```
 
 ```
-cd ./data
-python make_data.py
-cd ..
-python train.py
+$ cd ./data
+$ python make_data.py
+$ cd ..
+$ python train.py
 ```
 
 ```
