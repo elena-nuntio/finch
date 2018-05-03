@@ -4,7 +4,7 @@ Translation from Chinese to English is done by Zhedong Zheng
 
 * 第一讲 知识图谱概览
 
-  Chapter 1 Knowledge Graph Overview
+  Chapter 1 - Knowledge Graph Overview
 
     * KG的本质
     
@@ -32,7 +32,7 @@ Translation from Chinese to English is done by Zhedong Zheng
           
 * 第二讲 知识表示和知识建模
 
-  Chapter 2 Knowledge Representation and modelling
+  Chapter 2 - Knowledge Representation and modelling
   
     * RDF
   
