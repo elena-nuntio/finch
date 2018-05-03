@@ -1,4 +1,4 @@
-Translation from Chinese to English is done by Zhedong Zheng
+Translation from Chinese to English is done by 郑哲东 (Zhedong Zheng)
 
 ---
 
