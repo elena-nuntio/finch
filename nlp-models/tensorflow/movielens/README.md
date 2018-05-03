@@ -1,6 +1,6 @@
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/movielens.png">
 
-You need Python 2 for this sub-project, because we need to use [PaddlePaddle](http://www.paddlepaddle.org/) (which only supports Python 2 for now) for processed Movielens data
+We need to switch to Python 2 for this sub-project, because we need to use [PaddlePaddle](http://www.paddlepaddle.org/) for well-processed Movielens data, which only supports Python 2 for now
 
 ```
 pip install paddlepaddle tensorflow pandas tqdm
