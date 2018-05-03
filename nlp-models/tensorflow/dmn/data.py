@@ -2,7 +2,7 @@ from copy import deepcopy
 from config import args
 
 import numpy as np
-import sklearn
+import tensorflow as tf
 
 
 class BaseDataLoader(object):
@@ -34,36 +34,24 @@ class BaseDataLoader(object):
             'max_answer_len': None,
         }
 
-    def next_batch(self):
-        for i in range(0, self.data['size'], args.batch_size):
-            yield (self.data['val']['inputs'][i : i + args.batch_size],
-                   self.data['val']['questions'][i : i + args.batch_size],
-                   self.data['val']['answers'][i : i + args.batch_size],
-                   self.data['len']['inputs_len'][i : i + args.batch_size],
-                   self.data['len']['inputs_sent_len'][i : i + args.batch_size],
-                   self.data['len']['questions_len'][i : i + args.batch_size],
-                   self.data['len']['answers_len'][i : i + args.batch_size],)
-
-
-    def shuffle(self):
-        (self.data['val']['inputs'],
-         self.data['val']['questions'],
-         self.data['val']['answers'],
-         self.data['len']['inputs_len'],
-         self.data['len']['inputs_sent_len'],
-         self.data['len']['questions_len'],
-         self.data['len']['answers_len'],) = sklearn.utils.shuffle(self.data['val']['inputs'],
-                                                                   self.data['val']['questions'],
-                                                                   self.data['val']['answers'],
-                                                                   self.data['len']['inputs_len'],
-                                                                   self.data['len']['inputs_sent_len'],
-                                                                   self.data['len']['questions_len'],
-                                                                   self.data['len']['answers_len'],)
-        print("Data Shuffled")
+    def input_fn(self):
+        return tf.estimator.inputs.numpy_input_fn(
+            x = {
+                'inputs': self.data['val']['inputs'],
+                'questions': self.data['val']['questions'],
+                'inputs_len': self.data['len']['inputs_len'],
+                'inputs_sent_len': self.data['len']['inputs_sent_len'],
+                'questions_len': self.data['len']['questions_len'],
+                'answers_len': self.data['len']['answers_len']
+            },
+            y = self.data['val']['answers'] if self.is_training else None,
+            batch_size = args.batch_size,
+            num_epochs = args.n_epochs if self.is_training else 1,
+            shuffle = self.is_training)
 
 
 class DataLoader(BaseDataLoader):
-    def __init__(self, path, is_training=True, vocab=None, params=None):
+    def __init__(self, path, is_training, vocab=None, params=None):
         super().__init__()
         data, lens = self.load_data(path)
         if is_training:
@@ -74,6 +62,7 @@ class DataLoader(BaseDataLoader):
             self.vocab = vocab
             self.params = params
             self.padding(data, lens, is_training=is_training)
+        self.is_training = is_training
 
 
     def load_data(self, path):
