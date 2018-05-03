@@ -29,3 +29,15 @@ Translation from Chinese to English is done by Zhedong Zheng
         * DB视角: 用图的方式去存储知识
 
           DB: store knowledge in graphs
+          
+* 第二讲 知识表示和知识建模
+
+  Chapter 2 Knowledge Representation and modelling
+  
+  * RDF
+  
+    * 在RDF中，知识总是以三元组形式出现 (主，谓，宾)
+    
+      knowledge appear as triple (subject, predicate, object)
+ 
+  * OWL
