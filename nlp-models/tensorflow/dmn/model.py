@@ -54,9 +54,9 @@ def input_module(features, params, embedding, is_training):
     position = position_encoding(params['max_sent_len'], args.embed_dim)
     inputs = tf.reduce_sum(inputs * position, 2)                           # (B, I, D)
     birnn_out, _ = tf.nn.bidirectional_dynamic_rnn(                                             
-        GRU(args.hidden_size//2), GRU(args.hidden_size//2),
+        GRU('input_birnn_fw', args.hidden_size//2),
+        GRU('input_birnn_bw', args.hidden_size//2),
         inputs, features['inputs_len'], dtype=np.float32)
-                    
     fact_vecs = tf.concat(birnn_out, -1)                                   # (B, I, D)
     fact_vecs = tf.layers.dropout(fact_vecs, args.dropout_rate, training=is_training)
     return fact_vecs
@@ -65,7 +65,7 @@ def input_module(features, params, embedding, is_training):
 def question_module(features, embedding):
     questions = tf.nn.embedding_lookup(embedding, features['questions'])
     _, q_vec = tf.nn.dynamic_rnn(
-        GRU(), questions, features['questions_len'], dtype=np.float32)
+        GRU('question_rnn'), questions, features['questions_len'], dtype=np.float32)
     return q_vec
 
 
@@ -74,7 +74,8 @@ def memory_module(features, fact_vecs, q_vec, is_training):
     for i in range(args.n_hops):
         print('==> Memory Episode', i)
         episode = gen_episode(features, memory, q_vec, fact_vecs, is_training)
-        memory = tf.layers.dense(tf.concat([memory, episode, q_vec], 1), args.hidden_size, tf.nn.relu)
+        memory = tf.layers.dense(
+            tf.concat([memory, episode, q_vec], 1), args.hidden_size, tf.nn.relu, name='memory_proj')
     return memory  # (B, D)
 
 
@@ -85,8 +86,8 @@ def gen_episode(features, memory, q_vec, fact_vecs, is_training):
                     tf.abs(fact_vec - q_vec),
                     tf.abs(fact_vec - memory)]
         feature_vec = tf.concat(features, 1)
-        attention = tf.layers.dense(feature_vec, args.embed_dim, tf.tanh)
-        attention = tf.layers.dense(attention, 1)
+        attention = tf.layers.dense(feature_vec, args.embed_dim, tf.tanh, name='attn_proj_1')
+        attention = tf.layers.dense(attention, 1, name='attn_proj_2')
         return tf.squeeze(attention, 1)
 
     # Gates (attentions) are activated, if sentence relevant to the question or memory
@@ -97,8 +98,8 @@ def gen_episode(features, memory, q_vec, fact_vecs, is_training):
     
     # The relevant facts are summarized in another GRU
     _, episode = tf.nn.dynamic_rnn(
-        AttentionGRUCell(args.hidden_size),
-        tf.concat([fact_vecs, attns], 2),                      # (B, n_fact, D+1)
+        AttentionGRUCell(args.hidden_size, name='attn_gru'),
+        tf.concat([fact_vecs, attns], 2),                          # (B, n_fact, D+1)
         features['inputs_len'],
         dtype=np.float32)
     return episode                                                 # (B, D)
@@ -106,17 +107,17 @@ def gen_episode(features, memory, q_vec, fact_vecs, is_training):
 
 def answer_module(features, params, memory, q_vec, embedding, is_training, seq_inputs=None):
     memory = tf.layers.dropout(memory, args.dropout_rate, training=is_training)
-    init_state = tf.layers.dense(tf.concat((memory, q_vec), -1), args.hidden_size)
+    init_state = tf.layers.dense(tf.concat((memory, q_vec), -1), args.hidden_size, name='answer_proj')
     
     if is_training:
         helper = tf.contrib.seq2seq.TrainingHelper(
             inputs = tf.nn.embedding_lookup(embedding, seq_inputs),
             sequence_length = tf.to_int32(features['answers_len']))
         decoder = tf.contrib.seq2seq.BasicDecoder(
-            cell = GRU(),
+            cell = GRU('decoder_rnn'),
             helper = helper,
             initial_state = init_state,
-            output_layer = tf.layers.Dense(params['vocab_size']))
+            output_layer = tf.layers.Dense(params['vocab_size'], name='vocab_proj'))
         decoder_output, _, _ = tf.contrib.seq2seq.dynamic_decode(
             decoder = decoder)
         return decoder_output.rnn_output
@@ -127,10 +128,10 @@ def answer_module(features, params, memory, q_vec, embedding, is_training, seq_i
                 tf.constant([params['<start>']], dtype=tf.int32), [tf.shape(init_state)[0]]),
             end_token = params['<end>'])
         decoder = tf.contrib.seq2seq.BasicDecoder(
-            cell = GRU(reuse=True),
+            cell = GRU('decoder_rnn'),
             helper = helper,
             initial_state = init_state,
-            output_layer = tf.layers.Dense(params['vocab_size'], _reuse=True))
+            output_layer = tf.layers.Dense(params['vocab_size'], name='vocab_proj'))
         decoder_output, _, _ = tf.contrib.seq2seq.dynamic_decode(
             decoder = decoder,
             maximum_iterations = params['max_answer_len'])
@@ -143,10 +144,10 @@ def shift_right(x, params):
     return tf.concat([start, x[:, :-1]], 1)
 
 
-def GRU(rnn_size=None, reuse=None):
+def GRU(name, rnn_size=None):
     rnn_size = args.hidden_size if rnn_size is None else rnn_size
     return tf.nn.rnn_cell.GRUCell(
-        rnn_size, kernel_initializer=tf.orthogonal_initializer(), reuse=reuse)
+        rnn_size, kernel_initializer=tf.orthogonal_initializer(), name=name)
 
 
 def zero_index_pad(embedding):

@@ -72,9 +72,10 @@ class AttentionGRUCell(RNNCell):
                num_units,
                activation=None,
                reuse=None,
+               name=None,
                kernel_initializer=None,
                bias_initializer=None):
-    super(AttentionGRUCell, self).__init__(_reuse=reuse)
+    super(AttentionGRUCell, self).__init__(_reuse=reuse, name=name)
     self._num_units = num_units
     self._activation = activation or math_ops.tanh
     self._kernel_initializer = kernel_initializer
