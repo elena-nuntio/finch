@@ -34,10 +34,10 @@ Translation from Chinese to English is done by Zhedong Zheng
 
   Chapter 2 Knowledge Representation and modelling
   
-  * RDF
+    * RDF
   
-    * 在RDF中，知识总是以三元组形式出现 (主，谓，宾)
-    
-      knowledge appear as triple (subject, predicate, object)
+        * 在RDF中，知识总是以三元组形式出现 (主，谓，宾)
+
+          knowledge appear as triple (subject, predicate, object)
  
-  * OWL
+    * OWL
