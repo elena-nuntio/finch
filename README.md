@@ -122,13 +122,17 @@
 #### Question Answering（问题回答）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/dmn-details.png" height='100'>
 
+* [Interface: tf.estimator.Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator)
+
+    * [Facebook bAbI](https://research.fb.com/downloads/babi/) 
+
+        * [Dynamic Memory Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/dmn) 
+
 * [Interface: feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
     * [Facebook bAbI](https://research.fb.com/downloads/babi/)
 
         * [End-To-End Memory Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/end2end_mn) 
-
-        * [Dynamic Memory Network](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/dmn) 
 
 #### Knowledge Graph（知识图谱）
 * [Course Notes](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md)
