@@ -130,10 +130,6 @@
 
         * Dynamic Memory Network &nbsp; &nbsp; [Notebook](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/dmn/train.ipynb) &nbsp; &nbsp; [Files](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/dmn) 
 
-* [Interface: feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
-
-    * [Facebook bAbI](https://research.fb.com/downloads/babi/)
-
         * End-To-End Memory Network &nbsp; &nbsp; [Notebook](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/end2end_mn/train.ipynb) &nbsp; &nbsp; [Files](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/end2end_mn) 
 
 #### Knowledge Graph（知识图谱）
