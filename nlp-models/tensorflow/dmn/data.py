@@ -56,12 +56,11 @@ class DataLoader(BaseDataLoader):
         data, lens = self.load_data(path)
         if is_training:
             self.build_vocab(data)
-            self.padding(data, lens)
         else:
             self.demo = data
             self.vocab = vocab
             self.params = params
-            self.padding(data, lens, is_training=is_training)
+        self.padding(data, lens)
         self.is_training = is_training
 
 
@@ -85,30 +84,21 @@ class DataLoader(BaseDataLoader):
         self.vocab['idx2word'] = {idx: word for word, idx in self.vocab['word2idx'].items()}
         
 
-    def padding(self, data, lens, is_training=True):
-        if is_training:
-            inputs_len, inputs_sent_len, questions_len, answers_len = lens
+    def padding(self, data, lens):
+        inputs_len, inputs_sent_len, questions_len, answers_len = lens
 
-            self.params['max_input_len'] = max(inputs_len)
-            self.params['max_sent_len'] = max([fact_len for batch in inputs_sent_len for fact_len in batch])
-            self.params['max_quest_len'] = max(questions_len)
-            self.params['max_answer_len'] = max(answers_len)
+        self.params['max_input_len'] = max(inputs_len)
+        self.params['max_sent_len'] = max([fact_len for batch in inputs_sent_len for fact_len in batch])
+        self.params['max_quest_len'] = max(questions_len)
+        self.params['max_answer_len'] = max(answers_len)
 
-            self.data['len']['inputs_len'] = np.array(inputs_len)
-            for batch in inputs_sent_len:
-                batch += [0] * (self.params['max_input_len'] - len(batch))
-            self.data['len']['inputs_sent_len'] = np.array(inputs_sent_len)
-            self.data['len']['questions_len'] = np.array(questions_len)
-            self.data['len']['answers_len'] = np.array(answers_len)
-        else:
-            inputs_len, inputs_sent_len, questions_len, answers_len = lens
-            self.data['len']['inputs_len'] = np.array(inputs_len)
-            for batch in inputs_sent_len:
-                batch += [0] * (self.params['max_input_len'] - len(batch))
-            self.data['len']['inputs_sent_len'] = np.array(inputs_sent_len)
-            self.data['len']['questions_len'] = np.array(questions_len)
-            self.data['len']['answers_len'] = np.array(answers_len)
-
+        self.data['len']['inputs_len'] = np.array(inputs_len)
+        for batch in inputs_sent_len:
+            batch += [0] * (self.params['max_input_len'] - len(batch))
+        self.data['len']['inputs_sent_len'] = np.array(inputs_sent_len)
+        self.data['len']['questions_len'] = np.array(questions_len)
+        self.data['len']['answers_len'] = np.array(answers_len)
+        
         inputs, questions, answers = deepcopy(data)
         for facts in inputs:
             for sentence in facts:
