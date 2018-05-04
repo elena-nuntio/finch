@@ -59,7 +59,7 @@ class DataLoader(BaseDataLoader):
         else:
             self.demo = data
             self.vocab = vocab
-            self.params = params
+            self.params = deepcopy(params)
         self.padding(data, lens)
         self.is_training = is_training
 

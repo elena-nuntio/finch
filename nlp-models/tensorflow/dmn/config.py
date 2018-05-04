@@ -3,7 +3,7 @@ import argparse
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--n_epochs', type=int, default=15)
+parser.add_argument('--n_epochs', type=int, default=10)
 parser.add_argument('--batch_size', type=int, default=64)
 parser.add_argument('--embed_dim', type=int, default=80)
 parser.add_argument('--hidden_size', type=int, default=80)
@@ -16,7 +16,7 @@ args = parser.parse_args()
 from bunch import Bunch
 
 args = Bunch({
-    'n_epochs': 15,
+    'n_epochs': 10,
     'batch_size': 64,
     'embed_dim': 80,
     'hidden_size': 80,
