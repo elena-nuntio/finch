@@ -126,7 +126,7 @@
 
     * [Facebook bAbI](https://research.fb.com/downloads/babi/) 
 
-        * Dynamic Memory Network &nbsp; &nbsp; [Files](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/dmn) &nbsp; &nbsp; [Notebook](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/dmn/train.ipynb)
+        * Dynamic Memory Network &nbsp; &nbsp; [Notebook](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/dmn/train.ipynb) &nbsp; &nbsp; [Files](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/dmn) 
 
 * [Interface: feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
 
