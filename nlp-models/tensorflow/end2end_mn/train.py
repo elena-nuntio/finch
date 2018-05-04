@@ -9,9 +9,9 @@ import json
 
 def main():
     train_dl = DataLoader(
-        path='../dmn/temp/qa5_three-arg-relations_train.txt')
+        path='../temp/qa5_three-arg-relations_train.txt')
     test_dl = DataLoader(
-        path='../dmn/temp/qa5_three-arg-relations_test.txt',
+        path='../temp/qa5_three-arg-relations_test.txt',
         is_training=False, vocab=train_dl.vocab, params=train_dl.params)
 
     model = MemoryNetwork(train_dl.params)

@@ -13,10 +13,10 @@ def main():
     print(json.dumps(args, indent=4))
 
     train_dl = DataLoader(
-        path='./temp/qa5_three-arg-relations_train.txt',
+        path='../temp/qa5_three-arg-relations_train.txt',
         is_training=True)
     test_dl = DataLoader(
-        path='./temp/qa5_three-arg-relations_test.txt',
+        path='../temp/qa5_three-arg-relations_test.txt',
         is_training=False, vocab=train_dl.vocab, params=train_dl.params)
 
     model = tf.estimator.Estimator(model_fn, params=train_dl.params)
