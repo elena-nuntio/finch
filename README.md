@@ -16,9 +16,9 @@
 * Python 3 and [Jupyter Notebook](http://jupyter.org/) are required
 
     ```
-    (CPU User) $ pip3 install tensorflow==1.6.0 sklearn scipy tqdm
+    (CPU User) $ pip3 install tensorflow==1.6.0 sklearn scipy bunch
     
-    (GPU User) $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy tqdm
+    (GPU User) $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy bunch
     ```
 ---
 
