@@ -43,7 +43,7 @@
 
 * Interface: tf.estimator.Estimator
 
-    * IMDB Movie Reviews Sentiment (电影评论情感)
+    * IMDB Movie Reviews Sentiment 电影评论情感
 
         *  [CNN](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/concat_conv_1d_text_clf_imdb_test.ipynb)
 
@@ -58,7 +58,7 @@
 
 * Interface: tf.data.Dataset
 
-    * Writing《Anna Karenina》 (机器写作《安娜·卡列尼娜》)
+    * Writing《Anna Karenina》 机器写作《安娜·卡列尼娜》
     
         * [RNN Language Model](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/char_rnn_beam_test.ipynb)
     
@@ -68,7 +68,7 @@
 
     * Character Aware Language Model &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_rnn_text_gen.py) &nbsp; &nbsp; [PTB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_rnn_text_gen_test.ipynb) &nbsp; &nbsp;
 
-    * IMDB Movie Reviews (电影评论)
+    * IMDB Movie Reviews 电影评论
 
         * [VAE](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/vae)
         
@@ -79,7 +79,7 @@
 
 * Interface: tf.estimator.Estimator
 
-    * Movielens (电影推荐)
+    * Movielens 电影推荐
 
         * [User-Item Matching](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/movielens)
 
@@ -88,13 +88,13 @@
 
 * Interface: tf.data.Dataset
 
-    * POS Tagging (词性识别)
+    * POS Tagging 词性识别
 
         * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/pos_birnn_crf_test.ipynb)
 
         * [CNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/cnn_seq_label_pos_test.ipynb)
 
-    * Chinese Segmentation (中文分词)
+    * Chinese Segmentation 中文分词
 
         * [Bi-RNN + CRF](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/chseg_birnn_crf_test.ipynb)
 
@@ -105,19 +105,19 @@
 
 * Interface: tf.estimator.Estimator
 
-    * Learning to Sort (排序)
+    * Learning to Sort 机器学习字母的排序
 
         * [Attention Is All You Need](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need)
 
 * Interface: feeding
 
-    * Learning to Sort (排序)
+    * Learning to Sort 机器学习字母的排序
 
         * Seq2Seq + Bi-Encoder + Attention + Beam-Search &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq_ultimate.py) &nbsp; &nbsp; [Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/seq2seq_ultimate_test.ipynb) 
 
         * Pointer Network &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/pointer_net.py) &nbsp; &nbsp; [Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/pointer_net_test.ipynb)
 
-    * Speech Recognition (语音识别)
+    * Speech Recognition 语音识别
 
         * [CTC](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/asr)
 
@@ -126,7 +126,7 @@
 
 * Interface: tf.estimator.Estimator
 
-    * Facebook bAbI (逻辑回答)
+    * Facebook bAbI 逻辑回答
 
         * End-to-End Memory Network &nbsp; &nbsp; [Notebook](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/end2end_mn/train.ipynb) &nbsp; &nbsp; [Files](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/end2end_mn) 
 
