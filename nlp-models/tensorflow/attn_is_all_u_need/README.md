@@ -1,8 +1,3 @@
----
-Implementing the idea of ["Attention is All you Need"](https://arxiv.org/abs/1706.03762)
-
----
-
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/transformer.png" width="300">
 
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/multihead_attn.png" width='700'>
