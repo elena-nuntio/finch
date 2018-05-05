@@ -40,6 +40,6 @@ Translation from Chinese to English is done by 郑哲东 (Zhedong Zheng)
   
         * 在RDF中，知识总是以三元组形式出现 (主，谓，宾)
 
-          knowledge appear as triple (subject, predicate, object)
+          In RDF, knowledge appear as triple (subject, predicate, object)
  
     * OWL
