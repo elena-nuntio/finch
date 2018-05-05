@@ -32,7 +32,7 @@
 #### Word Embedding（词向量）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
 
-* [Interface: feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding)
+* Interface: feeding
 
     * Skip-Gram &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/word2vec_skipgram.py) &nbsp; &nbsp; [PTB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/word2vec_skipgram_test.ipynb)
 
