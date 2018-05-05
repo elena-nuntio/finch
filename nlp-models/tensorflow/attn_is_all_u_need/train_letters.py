@@ -16,9 +16,9 @@ def main():
     sources, targets = dl.load()
     
     tf_estimator = tf.estimator.Estimator(
-        tf_estimator_model_fn, params=prepare_params(dl), model_dir=args.model_dir)
+        tf_estimator_model_fn, params=prepare_params(dl))
     
-    for epoch in range(args.num_epochs):
+    for epoch in range(6):
         tf_estimator.train(tf.estimator.inputs.numpy_input_fn(
             x = {'source':sources, 'target':targets},
             batch_size = args.batch_size,
