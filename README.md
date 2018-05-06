@@ -12,7 +12,7 @@
 * [Knowledge Graph（知识图谱）](https://github.com/zhedongzheng/finch#knowledge-graph%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1)
 
 ---
-#### Installation 
+#### Requirements 
 * Python 3 and [Jupyter Notebook](http://jupyter.org/) are required
 
     ```
@@ -21,7 +21,7 @@
     (GPU User) $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy bunch
     ```
 ---
-
+#### Interfaces
 * [feed_dict](https://www.tensorflow.org/api_guides/python/reading_data#Feeding) is the most common and flexible interface, but not efficient for industry use
 
 * Starting to move existing code into new interfaces [Dataset](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
