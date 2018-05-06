@@ -22,7 +22,7 @@
     ```
 ---
 
-* [feeding](https://www.tensorflow.org/api_guides/python/reading_data#Feeding) is the most common and flexible interface, but not efficient for industry use
+* [feed_dict](https://www.tensorflow.org/api_guides/python/reading_data#Feeding) is the most common and flexible interface, but not efficient for industry use
 
 * Starting to move existing code into new interfaces [Dataset](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
 
@@ -32,7 +32,7 @@
 #### Word Embedding（词向量）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
 
-* < feeding >
+* < feed_dict >
 
     * Penn Treebank（PTB 语料库）
 
@@ -66,7 +66,7 @@
     
         *  [Attention Language Model (no RNN / CNN)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
 
-* < feeding >
+* < feed_dict >
 
     * Penn Treebank（PTB 语料库）
 
@@ -121,7 +121,7 @@
 
         * [Attention Is All You Need](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/attn_is_all_u_need/train_dialog.ipynb) &nbsp; &nbsp; [Files](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need) 
 
-* < feeding >
+* < feed_dict >
 
     * Learning to Sort（机器学习字母的排序）
 
