@@ -32,7 +32,7 @@
 #### Word Embedding（词向量）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
 
-* Interface: feeding
+* < feeding >
 
     * Penn Treebank（PTB 语料库）
 
@@ -43,7 +43,7 @@
 #### Text Classification（文本分类）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_2.png" height='100'>
 
-* Interface: tf.estimator.Estimator
+* < tf.estimator.Estimator >
 
     * IMDB Movie Reviews Sentiment（电影评论情感）
 
@@ -58,7 +58,7 @@
 #### Text Generation（文本生成）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_5.png" height='100'>
 
-* Interface: tf.data.Dataset
+* < tf.data.Dataset >
 
     * Writing《Anna Karenina》（机器写作《安娜·卡列尼娜》）
     
@@ -66,7 +66,7 @@
     
         *  [Attention Language Model (no RNN / CNN)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
 
-* Interface: feeding
+* < feeding >
 
     * Penn Treebank（PTB 语料库）
 
@@ -85,7 +85,7 @@
 #### Text Matching（文本匹配）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_10.jpeg" height='200'>
 
-* Interface: tf.estimator.Estimator
+* < tf.estimator.Estimator >
 
     * Movielens（电影推荐）
 
@@ -94,7 +94,7 @@
 #### Sequence Labelling（序列标记）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_4.jpg" height='100'>
 
-* Interface: tf.data.Dataset
+* < tf.data.Dataset >
 
     * POS Tagging（词性识别）
 
@@ -111,7 +111,7 @@
 #### Sequence to Sequence（序列到序列）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_1.png" height='100'>
 
-* Interface: tf.estimator.Estimator
+* < tf.estimator.Estimator >
 
     * Learning to Sort（机器学习字母的排序）
 
@@ -121,7 +121,7 @@
 
         * [Attention Is All You Need](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/attn_is_all_u_need/train_dialog.ipynb) &nbsp; &nbsp; [Files](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/attn_is_all_u_need) 
 
-* Interface: feeding
+* < feeding >
 
     * Learning to Sort（机器学习字母的排序）
 
@@ -132,7 +132,7 @@
 #### Question Answering（问题回答）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/dmn-details.png" height='100'>
 
-* Interface: tf.estimator.Estimator
+* < tf.estimator.Estimator >
 
     * Facebook bAbI（逻辑回答）
 
