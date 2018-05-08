@@ -28,7 +28,7 @@
 
 * Starting to create Jupyter Notebooks for immediate visualization
 
-* Will move to latest TF version as soon as possible
+* Will update to latest TF version as soon as possible
 ---
 
 #### Word Embedding（词向量）
