@@ -34,7 +34,7 @@
 #### Word Embedding（词向量）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_6.png" height='100'>
 
-* < feed_dict >
+* < tf.estimator.Estimator >
 
     * Penn Treebank（PTB 语料库）
 
