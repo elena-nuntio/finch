@@ -68,6 +68,8 @@
     
         *  [Attention LM (no RNN / CNN)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
 
+* < tf.estimator.Estimator >
+
     * Speech Recognition（语音识别）
 
         * [CTC](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/asr/train.ipynb)
