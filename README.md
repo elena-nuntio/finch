@@ -68,6 +68,10 @@
     
         *  [Attention LM (no RNN / CNN)](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
 
+    * Speech Recognition（语音识别）
+
+        * [CTC](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/asr/train.ipynb)
+
 * < feed_dict >
 
     * Penn Treebank（PTB 语料库）
@@ -79,10 +83,6 @@
         * [VAE](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/vae)
         
         * ["Toward Controlled Generation of Text"](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/toward-control)
-
-    * Speech Recognition（语音识别）
-
-        * [CTC](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/asr)
 
 #### Text Matching（文本匹配）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_10.jpeg" height='200'>
