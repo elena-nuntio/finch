@@ -9,7 +9,6 @@ def model_fn(features, labels, mode, params):
         labels = tf.zeros([tf.shape(features['inputs'])[0], params['max_answer_len']], tf.int64)
 
     logits = forward(features, params, is_training=True, seq_inputs=shift_right(labels, params))
-        
     predicted_ids = forward(features, params, is_training=False)
 
     if mode == tf.estimator.ModeKeys.PREDICT:
@@ -24,15 +23,12 @@ def model_fn(features, labels, mode, params):
         return tf.estimator.EstimatorSpec(mode=mode, loss=loss_op, train_op=train_op)
 
 
-def forward(features, params, is_training, seq_inputs=None, reuse=tf.AUTO_REUSE):
+def hop_forward(features, question, params, is_training, reuse):
     with tf.variable_scope('memory_o', reuse=reuse):
         memory_o = input_mem(features['inputs'], params, is_training)
     
     with tf.variable_scope('memory_i', reuse=reuse):
         memory_i = input_mem(features['inputs'], params, is_training)
-
-    with tf.variable_scope('questions', reuse=reuse):
-        question = quest_mem(features['questions'], params, is_training)
     
     match = tf.matmul(question, tf.transpose(memory_i, [0,2,1]))
 
@@ -43,14 +39,27 @@ def forward(features, params, is_training, seq_inputs=None, reuse=tf.AUTO_REUSE)
     match = post_softmax_masking(match, features['questions_len'], params['max_quest_len'])
 
     response = tf.matmul(match, memory_o)
-   
-    with tf.variable_scope('memory_o', reuse=True):
-        embedding = tf.get_variable('lookup_table')
 
     with tf.variable_scope('answer', reuse=reuse):
-        answer = tf.layers.flatten(tf.concat([response, question], -1))
-        output = answer_module(features, params, answer, embedding, is_training, seq_inputs)
+        answer = tf.concat([response, question], -1)
+        answer = tf.layers.dense(answer, args.hidden_dim, name='res_quest_proj_ans')
+    
+    return answer
 
+
+def forward(features, params, is_training, seq_inputs=None, reuse=tf.AUTO_REUSE):
+    with tf.variable_scope('questions', reuse=reuse):
+        question = quest_mem(features['questions'], params, is_training)
+    
+    for _ in range(args['n_hops']):
+        answer = hop_forward(features, question, params, is_training, reuse)
+        question = answer
+    
+    with tf.variable_scope('memory_o', reuse=True):
+        embedding = tf.get_variable('lookup_table')
+    with tf.variable_scope('final_answer', reuse=reuse):
+        output = answer_module(features, params, answer, embedding, is_training, seq_inputs)
+    
     return output
 
 
@@ -70,7 +79,11 @@ def quest_mem(x, params, is_training):
 
 
 def answer_module(features, params, answer, embedding, is_training, seq_inputs=None):
-    answer = tf.layers.dense(answer, args.hidden_dim, name='answer_hidden')
+    """
+    _, answer = tf.nn.dynamic_rnn(
+        GRU('answer_3d_to_2d'), answer, tf.count_nonzero(features['questions'], 1), dtype=tf.float32)
+    """
+    answer = tf.layers.dense(tf.layers.flatten(answer), args.hidden_dim, name='answer_hidden')
     init_state = tf.layers.dropout(answer, args.dropout_rate, training=is_training)
 
     if is_training:
@@ -145,3 +158,9 @@ def position_encoding(sentence_size, embedding_size):
             encoding[i-1, j-1] = (i - (le-1)/2) * (j - (ls-1)/2)
     encoding = 1 + 4 * encoding / embedding_size / sentence_size
     return np.transpose(encoding)
+
+def clip_grads(loss):
+    variables = tf.trainable_variables()
+    grads = tf.gradients(loss, variables)
+    clipped_grads, _ = tf.clip_by_global_norm(grads, args['clip_norm'])
+    return zip(clipped_grads, variables)

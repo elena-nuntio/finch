@@ -17,4 +17,6 @@ args = Bunch({
     'batch_size': 64,
     'hidden_dim': 64,
     'dropout_rate': 0.3,
+    'n_hops': 2,
+    'clip_norm': 5.0,
 })
