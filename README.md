@@ -140,7 +140,7 @@
 
     * Facebook bAbI（逻辑回答）
 
-        *  [End-to-End Memory Network](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/end2end_mn/train.ipynb) &nbsp; &nbsp; [Files](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/end2end_mn) 
+        *  [End-to-End Memory Network](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/end2end_mn/train.ipynb)
 
         *  [Dynamic Memory Network](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/dmn/train.ipynb)
 
