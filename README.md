@@ -142,7 +142,7 @@
 
         *  [End-to-End Memory Network](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/end2end_mn/train.ipynb) &nbsp; &nbsp; [Files](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/end2end_mn) 
 
-        *  [Dynamic Memory Network](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/dmn/train.ipynb) &nbsp; &nbsp; [Files](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/dmn) 
+        *  [Dynamic Memory Network](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/dmn/train.ipynb)
 
 #### Knowledge Graph（知识图谱）
 * [Course Notes](https://github.com/zhedongzheng/finch/blob/master/nlp-models/kg/notes.md)
