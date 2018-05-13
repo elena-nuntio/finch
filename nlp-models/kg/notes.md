@@ -1,4 +1,4 @@
-Translation from Chinese to English is done by [Zhedong Zheng](https://github.com/zhedongzheng/finch)
+Translation from Chinese to English is done by [Zhedong Zheng](https://github.com/zhedongzheng)
 
 ---
 
