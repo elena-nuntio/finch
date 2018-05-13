@@ -82,7 +82,7 @@
     * IMDB Movie Reviews（生成电影评论）
 
         * [VAE](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/vae)
-        
+
         * ["Toward Controlled Generation of Text"](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/toward-control)
 
 #### Text Matching（文本匹配）
