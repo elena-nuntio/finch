@@ -79,7 +79,7 @@
 
         * Character Aware LM &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_rnn_text_gen.py) &nbsp; &nbsp; [PTB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_rnn_text_gen_test.ipynb) &nbsp; &nbsp;
 
-    * IMDB Movie Reviews（生成电影评论）
+    * IMDB Movie Reviews（生成电影评论）
 
         * [VAE](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/vae)
 
