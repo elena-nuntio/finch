@@ -7,7 +7,7 @@ import numpy as np
 
 def model_fn(features, labels, mode, params):
     if labels is None:
-        labels = tf.zeros([tf.shape(features['inputs'])[0], params['max_answer_len']], tf.int64)
+        labels = tf.placeholder(tf.int64, [None, params['max_answer_len']])
 
     logits = forward(features, params, is_training=True, seq_inputs=shift_right(labels, params))
         

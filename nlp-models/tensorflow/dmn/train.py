@@ -10,7 +10,7 @@ import pprint
 
 def main():
     tf.logging.set_verbosity(tf.logging.INFO)
-    print(json.dumps(args, indent=4))
+    print(json.dumps(args.__dict__, indent=4))
 
     train_dl = DataLoader(
         path='../temp/qa5_three-arg-relations_train.txt',
