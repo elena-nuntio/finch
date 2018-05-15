@@ -75,8 +75,6 @@
 
         * [VAE](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/vae)
 
-        * ["Toward Controlled Generation of Text"](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/toward-control)
-
 #### Text Matching（文本匹配）
 <img src="https://github.com/zhedongzheng/finch/blob/master/nlp-models/assets/decoration_10.jpeg" height='200'>
 
