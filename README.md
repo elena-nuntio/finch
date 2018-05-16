@@ -65,7 +65,7 @@
 
     * [CTC](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/asr/train.ipynb)
 
-* < To be converted >
+* < To be rewritten >
 
     * Penn Treebank（PTB 语料库）
 
@@ -104,7 +104,7 @@
 
     * [Attention Is All You Need](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/attn_is_all_u_need/train_letters.ipynb)
         
-* < To be converted >
+* < To be rewritten >
 
     * Learning to Sort（机器学习字母的排序）
 
