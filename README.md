@@ -21,13 +21,13 @@
     (GPU User) $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy bunch tqdm
     ```
 ---
-#### Plans
+#### Progress
 
-* Starting to move existing code into new interfaces [< tf.data.Dataset >](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [< tf.estimator.Estimator >](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
+* (70%) move existing code into new interfaces [< tf.data.Dataset >](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [< tf.estimator.Estimator >](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
 
-* Starting to create Jupyter Notebooks for immediate visualization
+* (70%) create Jupyter Notebooks for better visualization
 
-* Will update to latest TF version as soon as possible
+* (0%) update to latest TF version (currently 1.6)
 ---
 
 #### Word Embedding（词向量）
