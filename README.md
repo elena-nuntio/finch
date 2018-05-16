@@ -28,6 +28,8 @@
 * (70%) create Jupyter Notebooks for better visualization
 
 * (0%) update to latest TF version (currently 1.6)
+
+* (0%) support second framework (e.g. PyTorch)
 ---
 
 #### Word Embedding（词向量）
