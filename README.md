@@ -16,9 +16,9 @@
 * Python 3 and [Jupyter Notebook](http://jupyter.org/) are required
 
     ```
-    (CPU User) $ pip3 install tensorflow==1.6.0 sklearn scipy bunch tqdm
+    (CPU User) $ pip3 install tensorflow sklearn scipy bunch tqdm
     
-    (GPU User) $ pip3 install tensorflow-gpu==1.6.0 sklearn scipy bunch tqdm
+    (GPU User) $ pip3 install tensorflow-gpu sklearn scipy bunch tqdm
     ```
 ---
 #### Progress
@@ -26,10 +26,6 @@
 * (70%) move existing code into new interfaces [< tf.data.Dataset >](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [< tf.estimator.Estimator >](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
 
 * (70%) create Jupyter Notebooks for better visualization
-
-* (0%) update to latest TF version (currently 1.6)
-
-* (0%) support second framework (e.g. PyTorch)
 ---
 
 #### Word Embedding（词向量）
