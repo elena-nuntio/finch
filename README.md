@@ -100,11 +100,11 @@
 
 * Learning to Sort（机器学习字母的排序）
 
-    * [Attention Is All You Need](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/attn_is_all_u_need/train_letters.ipynb)
+    * [Transformer](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/attn_is_all_u_need/train_letters.ipynb)
     
 * Learning to Dialog（机器对话）
 
-    * [Attention Is All You Need](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/attn_is_all_u_need/train_dialog.ipynb)
+    * [Transformer](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/attn_is_all_u_need/train_dialog.ipynb)
         
 * < To be rewritten >
 
