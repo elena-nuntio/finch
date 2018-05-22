@@ -25,7 +25,7 @@
 
 * (70%) move existing code into new interfaces [< tf.data.Dataset >](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [< tf.estimator.Estimator >](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
 
-* (70%) create Jupyter Notebooks for each model
+* (70%) create Jupyter Notebooks
 ---
 
 #### Word Embedding（词向量）
