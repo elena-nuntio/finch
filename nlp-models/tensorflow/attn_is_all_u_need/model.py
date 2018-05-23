@@ -147,7 +147,7 @@ def _get_position_encoder():
     elif args.position_encoding == 'param':
         pos_enc = learned_position_encoding
     else:
-        raise ValueError("position encoding has to be either 'sinusoidal' or 'learned'")
+        raise ValueError("position encoding has to be either 'param' or 'non_param'")
     return pos_enc
 
 
