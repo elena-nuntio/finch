@@ -2,9 +2,9 @@
 
 * We need to switch to Python 2 for this sub-project
 
-* Because we need to use [PaddlePaddle](http://www.paddlepaddle.org/) for well-processed Movielens data
+    * Because we need to use [PaddlePaddle](http://www.paddlepaddle.org/) for well-processed Movielens data
 
-    * which only supports Python 2 for now
+        * which only supports Python 2 for now
 
 * Please install these packages under Python 2:
     ```
