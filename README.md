@@ -58,6 +58,10 @@
     * [RNN LM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/char_rnn_beam_test.ipynb)
 
     *  [Self-Attention LM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/self_attn_lm_test.ipynb)
+    
+* Penn Treebank（PTB 语料库）
+
+    * [Character Aware LM](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-data-api/cnn_rnn_text_gen_test.ipynb)
 
 * Speech Recognition（语音识别）
 
@@ -65,9 +69,7 @@
 
 * < To be rewritten >
 
-    * Penn Treebank（PTB 语料库）
-
-        * Character Aware LM &nbsp; &nbsp; [Model](https://github.com/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_rnn_text_gen.py) &nbsp; &nbsp; [PTB Test](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/cnn_rnn_text_gen_test.ipynb) &nbsp; &nbsp;
+    
 
     * IMDB Movie Reviews（生成电影评论）
 
