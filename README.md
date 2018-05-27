@@ -21,11 +21,11 @@
     (GPU User) $ pip3 install tensorflow-gpu sklearn scipy bunch tqdm
     ```
 ---
-#### Progress
+#### Why This Project?
 
-* (70%) move existing code into new interfaces [< tf.data.Dataset >](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [< tf.estimator.Estimator >](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
+* Good TensorFlow practice to build model in [< tf.data.Dataset >](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [< tf.estimator.Estimator >](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
 
-* (70%) create Jupyter Notebooks
+* Displayed in clean Jupyter Notebooks, easy to learn and distribute
 ---
 
 #### Word Embedding（词向量）
