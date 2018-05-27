@@ -42,11 +42,11 @@ Translation from Chinese to English is done by [Zhedong Zheng](https://github.co
 
           In RDF, knowledge appear as triple (subject, predicate, object)
           
-        * RDF同样也是图模型，将资源的描述链接在一起
+        * RDF同样也是图模型，将资源的描述连接在一起
         
-          RDF is also a graph model to link the descriptions of resources
+          RDF is also a graphical model to link the descriptions of resources
           
-          RDF三元组可以被认为是图的一条弧（结点，连线，结点）
+          RDF三元组可以被认为是图模型的弧线（结点，连线，结点）
           
           RDF triples can be seen as arcs of a graph (vertex, edge, vertex)
  
