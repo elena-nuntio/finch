@@ -41,5 +41,13 @@ Translation from Chinese to English is done by [Zhedong Zheng](https://github.co
         * 在RDF中，知识总是以三元组形式出现 (主，谓，宾)
 
           In RDF, knowledge appear as triple (subject, predicate, object)
+          
+        * RDF同样也是图模型，将资源的描述链接在一起
+        
+          RDF is also a graph model to link the descriptions of resources
+          
+          RDF三元组可以被认为是图的一条弧（结点，连线，结点）
+          
+          RDF triples can be seen as arcs of a graph (vertex, edge, vertex)
  
     * OWL
