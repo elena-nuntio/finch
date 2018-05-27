@@ -3,7 +3,7 @@
 ---
 #### Why This Project?
 
-* Good TensorFlow practice to build models under [tf.data](https://www.tensorflow.org/api_docs/python/tf/data) and [tf.estimator](https://www.tensorflow.org/api_docs/python/tf/estimator)
+* Good TensorFlow practice to build models under [tf.data](https://www.tensorflow.org/api_docs/python/tf/data) and [tf.estimator](https://www.tensorflow.org/api_docs/python/tf/estimator) interfaces
 
 * Displayed in clean Jupyter Notebooks
 
