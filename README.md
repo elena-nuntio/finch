@@ -102,9 +102,9 @@
 
 * Learning to Sort（机器学习字母的排序）
 
-    * [Transformer](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/attn_is_all_u_need/train_letters.ipynb)
-    
     * [Seq2Seq + Attention + Beam-Search](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/tf-estimator/seq2seq_ultimate_test.ipynb)
+
+    * [Transformer](https://nbviewer.jupyter.org/github/zhedongzheng/finch/blob/master/nlp-models/tensorflow/attn_is_all_u_need/train_letters.ipynb)
     
 * Learning to Dialog（机器对话）
 
