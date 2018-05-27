@@ -70,9 +70,7 @@
 
 * < To be rewritten >
 
-    
-
-    * IMDB Movie Reviews（生成电影评论）
+    * IMDB Movie Reviews（电影评论）
 
         * [VAE](https://github.com/zhedongzheng/finch/tree/master/nlp-models/tensorflow/vae)
 
