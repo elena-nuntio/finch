@@ -3,7 +3,7 @@
 ---
 #### Why This Project?
 
-* Good TensorFlow practice to build model in [Dataset API](https://www.tensorflow.org/api_docs/python/tf/data) and [Estimator API](https://www.tensorflow.org/api_docs/python/tf/estimator)
+* Good TensorFlow practice to build models in [Dataset API](https://www.tensorflow.org/api_docs/python/tf/data) and [Estimator API](https://www.tensorflow.org/api_docs/python/tf/estimator)
 
 * Displayed in clean Jupyter Notebooks, easy to learn and distribute
 
